@@ -145,7 +145,7 @@
 </node>
 </node>
 </node>
-<node BACKGROUND_COLOR="#cccccc" COLOR="#000000" CREATED="1454774673177" FOLDED="true" ID="ID_520809588" MODIFIED="1458841506393" POSITION="left" STYLE="bubble">
+<node BACKGROUND_COLOR="#cccccc" COLOR="#000000" CREATED="1454774673177" ID="ID_520809588" MODIFIED="1459839208571" POSITION="left" STYLE="bubble">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -252,6 +252,38 @@
 </node>
 </node>
 </node>
+<node BACKGROUND_COLOR="#cccccc" COLOR="#000000" CREATED="1459839232020" ID="ID_190293289" MODIFIED="1459840337689" POSITION="right" STYLE="bubble">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Documents
+    </p>
+  </body>
+</html>
+</richcontent>
+<edge STYLE="sharp_bezier" WIDTH="8"/>
+<font NAME="SansSerif" SIZE="14"/>
+<node COLOR="#000000" CREATED="1459840338381" ID="ID_913563925" LINK="report/605.744%20Classifying%20Supreme%20Court%20Legal%20Opinions%20-%20overview.gdoc" MODIFIED="1459840378617" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Legal Classification Overview
+    </p>
+    <p>
+      <font color="#ff0000">gdoc</font>
+    </p>
+  </body>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="thin"/>
+</node>
+</node>
 <node BACKGROUND_COLOR="#cccccc" COLOR="#000000" CREATED="1458237476557" ID="ID_1179196030" MODIFIED="1458424028277" POSITION="right" STYLE="bubble">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -304,7 +336,7 @@
 <edge STYLE="bezier" WIDTH="thin"/>
 </node>
 </node>
-<node BACKGROUND_COLOR="#cccccc" COLOR="#000000" CREATED="1458367952276" FOLDED="true" ID="ID_1268044016" MODIFIED="1459361675047" POSITION="right" STYLE="bubble" TEXT="Approach">
+<node BACKGROUND_COLOR="#cccccc" COLOR="#000000" CREATED="1458367952276" ID="ID_1268044016" MODIFIED="1459839175309" POSITION="right" STYLE="bubble" TEXT="Approach">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="14"/>
 <node COLOR="#000000" CREATED="1458423882303" ID="ID_327626874" MODIFIED="1458423885903" STYLE="fork" TEXT="Data">
@@ -1112,7 +1144,7 @@
 </node>
 </node>
 </node>
-<node BACKGROUND_COLOR="#cccccc" COLOR="#000000" CREATED="1458237476559" ID="ID_831612324" MODIFIED="1458853061662" POSITION="right" STYLE="bubble">
+<node BACKGROUND_COLOR="#cccccc" COLOR="#000000" CREATED="1458237476559" FOLDED="true" ID="ID_831612324" MODIFIED="1459839225097" POSITION="right" STYLE="bubble">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1353,8 +1385,7 @@
       <font color="#ff1111">pdf</font>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1459618143781" ID="ID_1506028180" LINK="research/LRECworkshop_summation_2010.pdf" MODIFIED="1459618173207">
 <richcontent TYPE="NODE"><html>
@@ -1369,8 +1400,7 @@
       <font color="#ff1111">pdf</font>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node COLOR="#000000" CREATED="1458853161568" ID="ID_1627127296" LINK="https://legalinformatics.wordpress.com/2013/09/08/upcoming-legal-hacking-events-2013-2014/" MODIFIED="1458853202897" STYLE="fork">
@@ -1398,8 +1428,7 @@
       <font color="#0000f9" size="2">http://www.lrec-conf.org/lrec2010/?LREC2010-Map-of-Language-Resources</font>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1459618355813" ID="ID_206601082" MODIFIED="1459618355813" TEXT="Resource Type"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1459618355816" ID="ID_257790272" MODIFIED="1459618355817" TEXT="Size"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1459618355819" ID="ID_1533930282" MODIFIED="1459618355819" TEXT="Resource Name"/>
