@@ -56,6 +56,76 @@
   </body>
 </html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
+<node COLOR="#000000" CREATED="1460524549603" ID="ID_1724951780" MODIFIED="1460524570193" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Module 7
+    </p>
+    <p>
+      Select a topic and submit a proposal (
+    </p>
+    <p>
+      one page is enough; email is fine)
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node COLOR="#000000" CREATED="1460524549606" ID="ID_1323231189" MODIFIED="1460524579896" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Module 11
+    </p>
+    <p>
+      Send me a status report
+    </p>
+    <p>
+      (one paragraph can be enough; email is fine)
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node COLOR="#000000" CREATED="1460524549608" ID="ID_1191760017" MODIFIED="1460524587232" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Module 13
+    </p>
+    <p>
+      Video presentation provided to the class
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node COLOR="#000000" CREATED="1460524549609" ID="ID_1201311616" MODIFIED="1460524593889" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Module 14
+    </p>
+    <p>
+      Written report due. Reviews of presentations due.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
 </node>
 </node>
 <node BACKGROUND_COLOR="#cccccc" COLOR="#000000" CREATED="1454775214688" ID="ID_1752010669" MODIFIED="1458360905277" POSITION="left" STYLE="bubble">
@@ -334,7 +404,7 @@
 <edge STYLE="bezier" WIDTH="thin"/>
 </node>
 </node>
-<node BACKGROUND_COLOR="#cccccc" COLOR="#000000" CREATED="1458367952276" ID="ID_1268044016" MODIFIED="1459902300407" POSITION="right" STYLE="bubble" TEXT="Approach">
+<node BACKGROUND_COLOR="#cccccc" COLOR="#000000" CREATED="1458367952276" FOLDED="true" ID="ID_1268044016" MODIFIED="1460508847887" POSITION="right" STYLE="bubble" TEXT="Approach">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="14"/>
 <node COLOR="#000000" CREATED="1458423882303" ID="ID_327626874" MODIFIED="1458423885903" STYLE="fork" TEXT="Data">
@@ -457,7 +527,7 @@
 </html></richcontent>
 </node>
 </node>
-<node COLOR="#000000" CREATED="1458425560201" FOLDED="true" ID="ID_414112479" MODIFIED="1458439835171" STYLE="fork" TEXT="Research and Build seperate lookups for">
+<node COLOR="#000000" CREATED="1458425560201" ID="ID_414112479" MODIFIED="1460508244351" STYLE="fork" TEXT="Research and Build seperate lookups for">
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458425589791" ID="ID_395549327" MODIFIED="1459902300142" TEXT="Each judge who served on the Supreme Court from 2003-2015"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458425628213" ID="ID_944037971" MODIFIED="1459902300142" TEXT="Each President and party who appointed the judge"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458363967661" ID="ID_1769625104" LINK="https://en.wikipedia.org/wiki/List_of_Justices_of_the_Supreme_Court_of_the_United_States" MODIFIED="1459902300142" STYLE="fork">
@@ -1142,7 +1212,7 @@
 </node>
 </node>
 </node>
-<node BACKGROUND_COLOR="#cccccc" COLOR="#000000" CREATED="1458237476559" FOLDED="true" ID="ID_831612324" MODIFIED="1459872846937" POSITION="right" STYLE="bubble">
+<node BACKGROUND_COLOR="#cccccc" COLOR="#000000" CREATED="1458237476559" ID="ID_831612324" MODIFIED="1460478092052" POSITION="right" STYLE="bubble">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1158,199 +1228,78 @@
 </html></richcontent>
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="14"/>
-<node COLOR="#000000" CREATED="1458360892350" ID="ID_161917387" MODIFIED="1458369901033" STYLE="fork" TEXT="Legal Notes">
-<edge STYLE="bezier" WIDTH="thin"/>
-<node COLOR="#000000" CREATED="1458360242867" ID="ID_788975732" MODIFIED="1458360260854" STYLE="fork" TEXT="Supreme Court Specifics">
-<edge STYLE="bezier" WIDTH="thin"/>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458360261147" ID="ID_1979387463" MODIFIED="1459902300158" STYLE="fork" TEXT="There are nine Justices"/>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458360339684" ID="ID_1864561176" MODIFIED="1459902300158" STYLE="fork">
+<node COLOR="#000000" CREATED="1460478113108" ID="ID_416843898" LINK="research/Legal%20Docket-Entry%20Classification-%20Where%20Machine%20Learning%20stumbles.pdf" MODIFIED="1460508829977" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
   </head>
   <body>
     <p>
-      <u><b>Majority Opinion</b></u>
+      Legal Docket-Entry Classification:
     </p>
     <p>
-      majority opinion is a judicial opinion agreed to by more
+      Where Machine Learning stumbles
     </p>
     <p>
-      &#160;than half of the members of a court. A majority opinion
-    </p>
-    <p>
-      &#160;sets forth the decision of the court and an explanation
-    </p>
-    <p>
-      &#160;of the rationale behind the court's decision.
-    </p>
-  </body>
-</html></richcontent>
-</node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458360346192" ID="ID_415248398" MODIFIED="1459902300158" STYLE="fork">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <u><b>Dissenting Opinion:</b></u>
-    </p>
-    <p>
-      A dissenting opinion (or dissent) is an opinion in a legal case written
-    </p>
-    <p>
-      by one or more judges expressing disagreement with the majority opinion
-    </p>
-    <p>
-      &#160;of the court which gives rise to its judgment. When not necessarily referring
-    </p>
-    <p>
-      &#160;to a legal decision, this can also be referred to as a minority report.
-    </p>
-  </body>
-</html></richcontent>
-</node>
-</node>
-<node COLOR="#000000" CREATED="1458360917600" ID="ID_708839086" LINK="research/Reading%20Supreme%20Court%20Opinion.pdf" MODIFIED="1458371139947" STYLE="fork">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      Reading a Supreme Court Opinion
-    </p>
-    <p>
-      <font color="#ff0000">pdf </font>
-    </p>
-    <p>
-      <font color="#0000ff" size="1">http://www.americanbar.org/publications/insights_on_law_andsociety/13/fall_2012/how_to_read_a_ussupremecourtopinion.html</font>
-    </p>
-  </body>
-</html></richcontent>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458365945110" ID="ID_180996339" MODIFIED="1459902300159">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <b>Syllabus</b>:
-    </p>
-    <p>
-      Summary of the situation; outlines the facts of the case
-    </p>
-    <p>
-      &#160;and the path that the case has taken to get to the
-    </p>
-    <p>
-      Supreme Court
-    </p>
-  </body>
-</html></richcontent>
-</node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458365967762" ID="ID_1885519034" MODIFIED="1459902300159">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <b>Main Opinion:</b>
-    </p>
-    <p>
-      Court's official opinion;the opinion announces a decision
-    </p>
-    <p>
-      and provides an explanation for the decision by articulating
-    </p>
-    <p>
-      the legal rationale that the justices relied upon to reach the decision
-    </p>
-  </body>
-</html></richcontent>
-</node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458366352745" ID="ID_1083066626" MODIFIED="1459902300159">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <b>Concurring Opinion(s):</b>
-    </p>
-    <p>
-      Judges who agree with the official opinion but who
-    </p>
-    <p>
-      use a different rationale
-    </p>
-  </body>
-</html></richcontent>
-</node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458366009273" ID="ID_179733293" MODIFIED="1459902300159">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <b>Dissenting Opinion(s): </b>
-    </p>
-    <p>
-      Judge(s) who disagree with the main opinion of the court
-    </p>
-  </body>
-</html></richcontent>
-</node>
-</node>
-</node>
-<node COLOR="#000000" CREATED="1458360862170" ID="ID_1671183230" MODIFIED="1458853161569" STYLE="fork">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      Classification Notes
+      <font color="#ff0000">pdf</font>
     </p>
   </body>
 </html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
-<node COLOR="#000000" CREATED="1458370416364" FOLDED="true" ID="ID_422071489" MODIFIED="1459361683073" STYLE="fork" TEXT="Stanford NLP">
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458370428772" ID="ID_138439923" MODIFIED="1459902300160">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1460486122694" ID="ID_224311022" MODIFIED="1460508829978" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
   </head>
   <body>
     <p>
-      <b><u>Ground Truth Information</u></b>
+      We present a text classification problem from the legal
     </p>
-    <div class="page" title="Page 189">
+    <p>
+      &#160;domain which challenges some of our understanding
+    </p>
+    <p>
+      of text classification problems. In the new domain, we
+    </p>
+    <p>
+      found that the standard ML approaches using
+    </p>
+    <p>
+      bag-of-words features perform relatively poorly.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1460486213611" ID="ID_1595051528" MODIFIED="1460508829979" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Looked to classify in <b>Order re: Summary Judgment</b>
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1460486252401" ID="ID_888303206" MODIFIED="1460508829980" STYLE="fork" TEXT="Tried Decision Trees as well, but:">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460486270478" ID="ID_438506283" MODIFIED="1460508829980">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <div class="page" title="Page 6">
       <div class="layoutArea">
         <div class="column">
           <p>
-            <font size="3" face="Palatino">With respect to a user information need, a document in the test collection is given </font>
+            However, the performance of the decision tree is
           </p>
           <p>
-            <font size="3" face="Palatino">&#160;a binary classification as either relevant or nonrelevant. This decision is referred to as </font>
+            found to be statistically indistinguishable from the
           </p>
           <p>
-            <font size="3" face="Palatino">the <b><i>gold standard</i></b><i>&#160;</i>or <b><i>ground truth</i></b><i>&#160; </i>judgment of relevance. </font>
-          </p>
-          <p>
-            
-          </p>
-          <p>
-            <font size="3" face="Palatino">The test document collection and suite of information needs have to be of a reasonable size: </font>
-          </p>
-          <p>
-            <font size="3" face="Palatino">you need to average performance over fairly large test sets, as results are highly variable over different documents and information needs. </font>
-          </p>
-          <p>
-            <font size="3" face="Palatino">As a rule of thumb, 50 information needs has usually been found to be a sufficient minimum. </font>
+            linear SVM as shown in entry 4 of table 5
           </p>
         </div>
       </div>
@@ -1359,18 +1308,18 @@
 </html></richcontent>
 </node>
 </node>
-<node COLOR="#000000" CREATED="1458853161538" ID="ID_795898338" LINK="https://legalinformatics.wordpress.com/tag/natural-language-processing-of-legal-documents/" MODIFIED="1458853180941" STYLE="fork">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1460486821715" ID="ID_1659558122" MODIFIED="1460508829981" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
   </head>
   <body>
-    <p>
-      <font size="2" color="#0000ff">https://legalinformatics.wordpress.com/tag/natural-language-processing-of-legal-documents/</font>
-    </p>
+    <img src="images/Legal%20Docket%20Entry%20Table5.png" />
   </body>
 </html></richcontent>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1459617981042" ID="ID_1047729468" LINK="research/WynerPetersJURIX2011.pdf" MODIFIED="1459902300160">
+</node>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1459617981042" ID="ID_1047729468" LINK="research/WynerPetersJURIX2011.pdf" MODIFIED="1460509690466" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1384,8 +1333,479 @@
     </p>
   </body>
 </html></richcontent>
+<edge STYLE="bezier" WIDTH="thin"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1460487257696" ID="ID_1948229107" MODIFIED="1460509690467" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      The paper presents a linguistically-oriented, rule-based
+    </p>
+    <p>
+      &#160;approach, which is in contrast to a machine learning
+    </p>
+    <p>
+      &#160;approach. It outlines use cases, discusses the source
+    </p>
+    <p>
+      &#160;materials, reviews the methodology, then provides initial results and future steps.
+    </p>
+  </body>
+</html></richcontent>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1459618143781" ID="ID_1506028180" LINK="research/LRECworkshop_summation_2010.pdf" MODIFIED="1459902300160">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1460487362725" ID="ID_294063445" MODIFIED="1460509690467" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      There is current work on expressing legal rules in XML such as
+    </p>
+    <p>
+      RuleML. Oracle Policy Automation4 is a commercially successful
+    </p>
+    <p>
+      solution in which the source material is manually scoped,
+    </p>
+    <p>
+      translated into a formal, executable language, then served
+    </p>
+    <p>
+      with a natural language interface over the Internet allowing users
+    </p>
+    <p>
+      to receive determinations.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1460487494037" ID="ID_1065591761" MODIFIED="1460509690468" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      To address the bottleneck, natural language
+    </p>
+    <p>
+      processing (NLP) techniques have been applied.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1460493161696" ID="ID_534996424" MODIFIED="1460509690469" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Use cases and materials:
+    </p>
+    <p>
+      Focused on compliance laws; three steps applied:
+    </p>
+  </body>
+</html></richcontent>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460493424103" ID="ID_1479092974" MODIFIED="1460509690470">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      First stage: the relevant regulatory rules for particular industries
+    </p>
+    <p>
+      &#160;are identified and extracted from source regulation to create
+    </p>
+    <p>
+      compliance rulebooks; these rules are related to the industrial
+    </p>
+    <p>
+      or company compliance policies.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460493424108" ID="ID_1592289150" MODIFIED="1460509690470">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Second stage: compliance risks are identified, that is,
+    </p>
+    <p>
+      the difference between a company&#8217;s current policies
+    </p>
+    <p>
+      and novel rules.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460493424112" ID="ID_729174217" MODIFIED="1460509690471">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Third stage: the rule is made operational by:
+    </p>
+  </body>
+</html></richcontent>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460493424114" ID="ID_532372181" MODIFIED="1460509690471">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Translating it into the particular business rule applicable to the company
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460493424116" ID="ID_458269113" MODIFIED="1460509690471">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Tracking where practice complies with the regulation
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460493424117" ID="ID_1475137508" MODIFIED="1460509690472">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Reporting any issues that arise in compliance
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1460493585782" ID="ID_223080966" MODIFIED="1460509690474" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Initial Analysis
+    </p>
+  </body>
+</html></richcontent>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460493592343" ID="ID_41004887" MODIFIED="1460509690475">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      In using the Standford parser the corpus had to
+    </p>
+    <p>
+      be broken up to allow it to parse successfully
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460493784137" ID="ID_416253082" MODIFIED="1460509690475">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Regulatory texts tend to have additional challenges
+    </p>
+  </body>
+</html></richcontent>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460493773553" ID="ID_1630663682" MODIFIED="1460509690476">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Have long, complex sentences of several coordinated
+    </p>
+    <p>
+      &#160;clauses or subordinate clauses.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460493773555" ID="ID_1035775780" MODIFIED="1460509690476">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Use lists, which use list punctuation, including
+    </p>
+    <p>
+      &#160;enumerations, colons, etc.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460493773557" ID="ID_1841309311" MODIFIED="1460509690476">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Use references that contain a mix of punctuation and
+    </p>
+    <p>
+      &#160;alpha-numeric characters that confound tokenisation
+    </p>
+    <p>
+      and sentence splitting.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460506917225" ID="ID_103858101" MODIFIED="1460509690476" TEXT="Contain embedded exception clauses"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460506917227" ID="ID_297383448" MODIFIED="1460509690477" TEXT="Contain active and passive sentences"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460506917229" ID="ID_945201709" MODIFIED="1460509690477" TEXT="Have ambiguities from alternative parses of noun phrase and prepositional phrase"/>
+</node>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1460494114546" ID="ID_235770761" MODIFIED="1460509690479" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Model
+    </p>
+  </body>
+</html></richcontent>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460494114548" ID="ID_387702337" MODIFIED="1460509690480">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Agent and theme, which are semantic roles that must be
+    </p>
+    <p>
+      associated with noun phrases in grammatical (subject or object)
+    </p>
+    <p>
+      roles in the sentence
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      These are used to account for active-passive alternations and identify
+    </p>
+    <p>
+      the individual&#8217;s relationship to the deontic concept
+    </p>
+  </body>
+</html></richcontent>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460494185915" ID="ID_99586048" MODIFIED="1460509690480">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>Deontic&#160;logic </b>
+    </p>
+    <p>
+      Field of philosophical logic that is concerned with
+    </p>
+    <p>
+      &#160;obligation, permission, and related concepts.
+    </p>
+    <p>
+      &#160;Alternatively, a&#160;deontic logic is a formal system that
+    </p>
+    <p>
+      &#160;attempts to capture the essential logical features of
+    </p>
+    <p>
+      &#160;these concepts.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460494114552" ID="ID_658635190" MODIFIED="1460509690480">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Deontic modals and verbs
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460494114553" ID="ID_1967278771" MODIFIED="1460509690480">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Main verbs
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460494114554" ID="ID_528030828" MODIFIED="1460509690481">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Exception clauses, which may appear in lists
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460494114555" ID="ID_712614829" MODIFIED="1460509690481">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Conditional sentences along with their antecedents and consequences Antecedents may appear in lists
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1460506940730" ID="ID_1464675085" MODIFIED="1460509690483" STYLE="fork" TEXT="Methods, Models, and Sample Output">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460507039215" ID="ID_189304257" MODIFIED="1460509690484">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Used GATE framework for NLP
+    </p>
+  </body>
+</html></richcontent>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460507166068" ID="ID_1444069645" MODIFIED="1460509690484">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      GATE platform&#160;&#160;enables template-based extraction
+    </p>
+    <p>
+      on the basis of heuristic pattern-based grammars
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460507090848" ID="ID_364258796" MODIFIED="1460509690484">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Focused on event recognition
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460507237646" ID="ID_1442523100" MODIFIED="1460509690484">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Created targeted annotation modules for elements of
+    </p>
+    <p>
+      our model; these modules are expressed in the gazetteer
+    </p>
+    <p>
+      &#160;lists and Java Annotation Patterns Engine (JAPE) rules
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1460507547442" ID="ID_1182258175" MODIFIED="1460509690486" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="images/Rule%20Extraction%20from%20Regulations.png" />
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node COLOR="#000000" CREATED="1460517116016" ID="ID_555791139" LINK="http://www.cs.cornell.edu/courses/cs6742/2015fa/" MODIFIED="1460517148470" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Liilian Lee's work
+    </p>
+    <p>
+      <font size="2" color="#0000ff">http://www.cs.cornell.edu/courses/cs6742/2015fa/</font>
+    </p>
+  </body>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="thin"/>
+</node>
+<node COLOR="#000000" CREATED="1458853161538" ID="ID_795898338" LINK="https://legalinformatics.wordpress.com/tag/natural-language-processing-of-legal-documents/" MODIFIED="1460509679469" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font color="#000000" size="2">NLP of Legal documents</font>
+    </p>
+    <p>
+      <font color="#0000ff" size="2">Overall folder of papers</font>
+    </p>
+  </body>
+</html></richcontent>
+<edge STYLE="bezier" WIDTH="thin"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1459618143781" ID="ID_1506028180" LINK="research/LRECworkshop_summation_2010.pdf" MODIFIED="1460508830264" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1400,43 +1820,6 @@
   </body>
 </html></richcontent>
 </node>
-</node>
-<node COLOR="#000000" CREATED="1458853161568" ID="ID_1627127296" LINK="https://legalinformatics.wordpress.com/2013/09/08/upcoming-legal-hacking-events-2013-2014/" MODIFIED="1458853202897" STYLE="fork">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <font size="2" color="#0000ff">https://legalinformatics.wordpress.com/2013/09/08/upcoming-legal-hacking-events-2013-2014/</font>
-    </p>
-  </body>
-</html></richcontent>
-</node>
-<node COLOR="#000000" CREATED="1459618279167" ID="ID_1388870461" LINK="http://www.lrec-conf.org/lrec2010/?LREC2010-Map-of-Language-Resources" MODIFIED="1459618321155" STYLE="fork">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      LREC Map of Resources 2010
-    </p>
-    <p>
-      <font color="#0000f9" size="2">http://www.lrec-conf.org/lrec2010/?LREC2010-Map-of-Language-Resources</font>
-    </p>
-  </body>
-</html></richcontent>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1459618355813" ID="ID_206601082" MODIFIED="1459902300160" TEXT="Resource Type"/>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1459618355816" ID="ID_257790272" MODIFIED="1459902300160" TEXT="Size"/>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1459618355819" ID="ID_1533930282" MODIFIED="1459902300161" TEXT="Resource Name"/>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1459618355836" ID="ID_1822387503" MODIFIED="1459902300161" TEXT="Resource Production Status"/>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1459618355837" ID="ID_322651868" MODIFIED="1459902300161" TEXT="Languages"/>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1459618355838" ID="ID_285764540" MODIFIED="1459902300161" TEXT="Modality"/>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1459618355839" ID="ID_1379651221" MODIFIED="1459902300161" TEXT="Use of the Resource"/>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1459618355840" ID="ID_1821874854" MODIFIED="1459902300161" TEXT="Resource Availability"/>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1459618355841" ID="ID_69865450" MODIFIED="1459902300161" TEXT="Resource URL (if available)"/>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1459618355842" ID="ID_730757871" MODIFIED="1459902300162" TEXT="Resource Description"/>
 </node>
 <node COLOR="#000000" CREATED="1457590302888" ID="ID_589101672" LINK="https://sites.google.com/site/splet2012workshop/areas-of-interest" MODIFIED="1457919801466" STYLE="fork">
 <richcontent TYPE="NODE"><html>
@@ -1464,7 +1847,7 @@
 </html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
 </node>
-<node COLOR="#000000" CREATED="1457590302890" FOLDED="true" ID="ID_329525372" LINK="http://www.dcs.gla.ac.uk/Keith/Chapter.3/Ch.3.html" MODIFIED="1458369899138" STYLE="fork">
+<node COLOR="#000000" CREATED="1457590302890" ID="ID_329525372" LINK="http://www.dcs.gla.ac.uk/Keith/Chapter.3/Ch.3.html" MODIFIED="1460509674523" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1476,11 +1859,11 @@
   </body>
 </html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458342553391" ID="ID_223566537" MODIFIED="1459902300162" STYLE="fork" TEXT="Two main areas of application of classification methods in IR">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458342553391" ID="ID_223566537" MODIFIED="1460508830282" STYLE="fork" TEXT="Two main areas of application of classification methods in IR">
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458342581855" ID="ID_515161633" MODIFIED="1459902300162" TEXT="1. Keyword clustering"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458342589507" ID="ID_823239149" MODIFIED="1459902300162" TEXT="2. Document clustering"/>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458342836140" FOLDED="true" ID="ID_472777414" MODIFIED="1459902300162" STYLE="fork" TEXT="5 common measures of association in IR">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458342836140" FOLDED="true" ID="ID_472777414" MODIFIED="1460508830283" STYLE="fork" TEXT="5 common measures of association in IR">
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458342849320" ID="ID_951403107" MODIFIED="1459902300163" TEXT="Simple Matching">
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458353569526" ID="ID_508331885" MODIFIED="1459902300163">
 <richcontent TYPE="NODE"><html>
@@ -1531,7 +1914,7 @@
 </node>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458342910167" ID="ID_1622370778" MODIFIED="1459902300164" TEXT="Overlap Coefficient"/>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458353835636" ID="ID_995079241" MODIFIED="1459902300164" STYLE="fork" TEXT="Classification Methods">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458353835636" ID="ID_995079241" MODIFIED="1460508830285" STYLE="fork" TEXT="Classification Methods">
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458353876067" ID="ID_1054609109" MODIFIED="1459902300164">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -1594,7 +1977,7 @@
 </node>
 </node>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458354374039" ID="ID_1193353136" MODIFIED="1459902300169" STYLE="fork">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458354374039" ID="ID_1193353136" MODIFIED="1460508830292" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1687,67 +2070,7 @@
 </html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
 </node>
-<node COLOR="#000000" CREATED="1458428336394" ID="ID_1931855215" MODIFIED="1458428606458" STYLE="fork">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      Support Vector Machines (SVMs)
-    </p>
-  </body>
-</html></richcontent>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458428354424" ID="ID_224165683" LINK="http://www.statsoft.com/textbook/support-vector-machines" MODIFIED="1459902300170">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <font color="#1111ff" size="2">http://www.statsoft.com/textbook/support-vector-machines</font>
-    </p>
-  </body>
-</html></richcontent>
-</node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458428651029" ID="ID_150611795" LINK="research/Support%20Vector%20Machines.pdf" MODIFIED="1459902300170">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      Support Vector Machines
-    </p>
-    <p>
-      Interface to libsvm in package e1071
-    </p>
-    <p>
-      <font color="#ff1111">pdf</font>
-    </p>
-  </body>
-</html></richcontent>
-</node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458429390019" ID="ID_1104422365" LINK="research/SVM%20hype%20or%20hallelujah.pdf" MODIFIED="1459902300170">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      Support Vector Machines:
-    </p>
-    <p>
-      Hype or Hallelujah?
-    </p>
-    <p>
-      <font color="#ff1111">pdf</font>
-    </p>
-  </body>
-</html></richcontent>
-</node>
-</node>
-<node COLOR="#000000" CREATED="1458187365685" FOLDED="true" ID="ID_1936102145" MODIFIED="1458428334705" STYLE="fork">
+<node COLOR="#000000" CREATED="1458187365685" ID="ID_1936102145" MODIFIED="1460486842901" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1759,7 +2082,7 @@
   </body>
 </html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1457590302885" ID="ID_558594944" MODIFIED="1459902300170" STYLE="fork">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1457590302885" ID="ID_558594944" MODIFIED="1460508830306" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1778,7 +2101,7 @@
 </html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1457748159696" ID="ID_439268484" MODIFIED="1459902300170" STYLE="fork">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1457748159696" ID="ID_439268484" MODIFIED="1460508830307" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1797,7 +2120,7 @@
 </html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1457748159722" ID="ID_81588058" MODIFIED="1459902300170" STYLE="fork">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1457748159722" ID="ID_81588058" MODIFIED="1460508830307" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1816,6 +2139,332 @@
 </html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
 </node>
+</node>
+<node COLOR="#000000" CREATED="1460507819301" ID="ID_905905677" MODIFIED="1460509668759" STYLE="fork" TEXT="Misc info">
+<edge STYLE="bezier" WIDTH="thin"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1459618279167" ID="ID_1388870461" LINK="http://www.lrec-conf.org/lrec2010/?LREC2010-Map-of-Language-Resources" MODIFIED="1460508830318" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      LREC Map of Resources 2010
+    </p>
+    <p>
+      <font color="#0000f9" size="2">http://www.lrec-conf.org/lrec2010/?LREC2010-Map-of-Language-Resources</font>
+    </p>
+  </body>
+</html></richcontent>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1459618355813" ID="ID_206601082" MODIFIED="1459902300160" TEXT="Resource Type"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1459618355816" ID="ID_257790272" MODIFIED="1459902300160" TEXT="Size"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1459618355819" ID="ID_1533930282" MODIFIED="1459902300161" TEXT="Resource Name"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1459618355836" ID="ID_1822387503" MODIFIED="1459902300161" TEXT="Resource Production Status"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1459618355837" ID="ID_322651868" MODIFIED="1459902300161" TEXT="Languages"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1459618355838" ID="ID_285764540" MODIFIED="1459902300161" TEXT="Modality"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1459618355839" ID="ID_1379651221" MODIFIED="1459902300161" TEXT="Use of the Resource"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1459618355840" ID="ID_1821874854" MODIFIED="1459902300161" TEXT="Resource Availability"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1459618355841" ID="ID_69865450" MODIFIED="1459902300161" TEXT="Resource URL (if available)"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1459618355842" ID="ID_730757871" MODIFIED="1459902300162" TEXT="Resource Description"/>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458853161568" ID="ID_1627127296" LINK="https://legalinformatics.wordpress.com/2013/09/08/upcoming-legal-hacking-events-2013-2014/" MODIFIED="1460508830320" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font color="#0000ff">Legal Informatics Blog</font>
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+<node BACKGROUND_COLOR="#cccccc" COLOR="#000000" CREATED="1460508198879" ID="ID_813977487" MODIFIED="1460508208892" POSITION="right" STYLE="bubble" TEXT="Ground Truth">
+<edge STYLE="sharp_bezier" WIDTH="8"/>
+<font NAME="SansSerif" SIZE="14"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458370428772" ID="ID_138439923" MODIFIED="1460508213963" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b><u>Ground Truth Information</u></b>
+    </p>
+    <div class="page" title="Page 189">
+      <div class="layoutArea">
+        <div class="column">
+          <p>
+            <font size="3" face="Palatino">With respect to a user information need, a document in the test collection is given </font>
+          </p>
+          <p>
+            <font size="3" face="Palatino">&#160;a binary classification as either relevant or nonrelevant. This decision is referred to as </font>
+          </p>
+          <p>
+            <font size="3" face="Palatino">the <b><i>gold standard</i></b><i>&#160;</i>or <b><i>ground truth</i></b><i>&#160; </i>judgment of relevance. </font>
+          </p>
+          <p>
+            
+          </p>
+          <p>
+            <font size="3" face="Palatino">The test document collection and suite of information needs have to be of a reasonable size: </font>
+          </p>
+          <p>
+            <font size="3" face="Palatino">you need to average performance over fairly large test sets, as results are highly variable over different documents and information needs. </font>
+          </p>
+          <p>
+            <font size="3" face="Palatino">As a rule of thumb, 50 information needs has usually been found to be a sufficient minimum. </font>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html></richcontent>
+<edge STYLE="bezier" WIDTH="thin"/>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458360242867" ID="ID_788975732" MODIFIED="1460508213964" STYLE="fork" TEXT="Supreme Court Specifics">
+<edge STYLE="bezier" WIDTH="thin"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458360261147" ID="ID_1979387463" MODIFIED="1460508876785" STYLE="fork" TEXT="There are nine Justices"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458360339684" ID="ID_1864561176" MODIFIED="1460508876786" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <u><b>Majority Opinion</b></u>
+    </p>
+    <p>
+      majority opinion is a judicial opinion agreed to by more
+    </p>
+    <p>
+      &#160;than half of the members of a court. A majority opinion
+    </p>
+    <p>
+      &#160;sets forth the decision of the court and an explanation
+    </p>
+    <p>
+      &#160;of the rationale behind the court's decision.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458360346192" ID="ID_415248398" MODIFIED="1460508876786" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <u><b>Dissenting Opinion:</b></u>
+    </p>
+    <p>
+      A dissenting opinion (or dissent) is an opinion in a legal case written
+    </p>
+    <p>
+      by one or more judges expressing disagreement with the majority opinion
+    </p>
+    <p>
+      &#160;of the court which gives rise to its judgment. When not necessarily referring
+    </p>
+    <p>
+      &#160;to a legal decision, this can also be referred to as a minority report.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458360917600" ID="ID_708839086" LINK="research/Reading%20Supreme%20Court%20Opinion.pdf" MODIFIED="1460508876800" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Reading a Supreme Court Opinion
+    </p>
+    <p>
+      <font color="#ff0000">pdf </font>
+    </p>
+    <p>
+      <font color="#0000ff" size="1">http://www.americanbar.org/publications/insights_on_law_andsociety/13/fall_2012/how_to_read_a_ussupremecourtopinion.html</font>
+    </p>
+  </body>
+</html></richcontent>
+<edge STYLE="bezier" WIDTH="thin"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458365945110" ID="ID_180996339" MODIFIED="1460508876800" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>Syllabus</b>:
+    </p>
+    <p>
+      Summary of the situation; outlines the facts of the case
+    </p>
+    <p>
+      &#160;and the path that the case has taken to get to the
+    </p>
+    <p>
+      Supreme Court
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458365967762" ID="ID_1885519034" MODIFIED="1460508876801" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>Main Opinion:</b>
+    </p>
+    <p>
+      Court's official opinion;the opinion announces a decision
+    </p>
+    <p>
+      and provides an explanation for the decision by articulating
+    </p>
+    <p>
+      the legal rationale that the justices relied upon to reach the decision
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458366352745" ID="ID_1083066626" MODIFIED="1460508876801" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>Concurring Opinion(s):</b>
+    </p>
+    <p>
+      Judges who agree with the official opinion but who
+    </p>
+    <p>
+      use a different rationale
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458366009273" ID="ID_179733293" MODIFIED="1460508876802" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>Dissenting Opinion(s): </b>
+    </p>
+    <p>
+      Judge(s) who disagree with the main opinion of the court
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+<node BACKGROUND_COLOR="#cccccc" COLOR="#000000" CREATED="1460479598386" ID="ID_456838653" MODIFIED="1460508177616" POSITION="right" STYLE="bubble" TEXT="Teechnology">
+<edge STYLE="sharp_bezier" WIDTH="8"/>
+<font NAME="SansSerif" SIZE="14"/>
+<node COLOR="#000000" CREATED="1460479606168" ID="ID_1985519423" LINK="https://github.com/Tradeshift/quickdt" MODIFIED="1460479627437" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Deicision tree
+    </p>
+    <p>
+      <font color="#0000ff">https://github.com/Tradeshift/quickdt</font>
+    </p>
+  </body>
+</html></richcontent>
+<edge STYLE="bezier" WIDTH="thin"/>
+</node>
+<node COLOR="#000000" CREATED="1458428336394" ID="ID_1931855215" MODIFIED="1460507943912" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Support Vector Machines (SVMs)
+    </p>
+  </body>
+</html></richcontent>
+<edge STYLE="bezier" WIDTH="thin"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458428354424" ID="ID_224165683" LINK="http://www.statsoft.com/textbook/support-vector-machines" MODIFIED="1460507943913" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font color="#1111ff" size="2">http://www.statsoft.com/textbook/support-vector-machines</font>
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458428651029" ID="ID_150611795" LINK="research/Support%20Vector%20Machines.pdf" MODIFIED="1460507943913" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Support Vector Machines
+    </p>
+    <p>
+      Interface to libsvm in package e1071
+    </p>
+    <p>
+      <font color="#ff1111">pdf</font>
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458429390019" ID="ID_1104422365" LINK="research/SVM%20hype%20or%20hallelujah.pdf" MODIFIED="1460507943914" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Support Vector Machines:
+    </p>
+    <p>
+      Hype or Hallelujah?
+    </p>
+    <p>
+      <font color="#ff1111">pdf</font>
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node COLOR="#000000" CREATED="1460479601720" ID="ID_724503972" LINK="http://svmlight.joachims.org/" MODIFIED="1460479656843" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      SVM Light
+    </p>
+    <p>
+      <font color="#0000ff">http://svmlight.joachims.org/</font>
+    </p>
+  </body>
+</html></richcontent>
+<edge STYLE="bezier" WIDTH="thin"/>
 </node>
 </node>
 </node>
