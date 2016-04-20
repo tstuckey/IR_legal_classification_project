@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 mypath=../datasources
-mydestination=../converted_datasources
+mydestination=../datasources-converted
 tikapath=../lib/tika-app-1.12.jar
 
 #get to where the script is invoked from
