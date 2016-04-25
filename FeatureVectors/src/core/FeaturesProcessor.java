@@ -40,20 +40,6 @@ public class FeaturesProcessor {
     }
 
     /**
-     * Make the line of text lowercase and trim any whitespace off the ends
-     *
-     * @param line
-     * @return normalized string
-     */
-    private String normalizeLine(String line) {
-        if (line == null) {
-            return null;
-        }
-        String tmp = line.toLowerCase();
-        return tmp.trim();
-    }
-
-    /**
      * Process the Feature Vector File and populate the myClassifications HashMap structure
      */
     private void processFile(BufferedReader featureVectorBufferedReader) {
@@ -62,11 +48,12 @@ public class FeaturesProcessor {
         }//just return if the buffered reader is null
         try {
             String lastClassification = null;
-            String normalizeLine = normalizeLine(featureVectorBufferedReader.readLine());
-            while (normalizeLine != null) {
-                if (normalizeLine.endsWith(":")) {
+            String line = featureVectorBufferedReader.readLine();
+            while (line != null) {
+                line=line.trim();
+                if (line.endsWith(":")) {
                     //features end with a ':'
-                    String aClassification = normalizeLine.substring(0, normalizeLine.length() - 1);
+                    String aClassification = line.substring(0, line.length() - 1);
                     if (FeatureVectorsCreator.DEBUG) {
                         System.out.println("FeaturesProcessor: aClassification is: " + aClassification);
                     }
@@ -78,17 +65,17 @@ public class FeaturesProcessor {
                         lastClassification = aClassification;
                     }
                 }
-                if (normalizeLine.contains("|")) {
-                    String[] tmp = normalizeLine.split("[|]");
+                if (line.contains("|")) {
+                    String[] tmp = line.split("[|]");
                     Integer featureID = Integer.parseInt(tmp[0]);
                     String feature = tmp[1];
                     if (FeatureVectorsCreator.DEBUG) {
                         System.out.println("FeaturesProcessor: adding to Classification: " + lastClassification +
                                 " the feature: " + feature + " with featureID: " + featureID);
                     }
-                    myClassifications.get(lastClassification).featureHash.put(feature, new DocumentInfo(featureID));
+                    myClassifications.get(lastClassification).addFeature(feature,featureID);
                 }
-                normalizeLine = normalizeLine(featureVectorBufferedReader.readLine());
+                line = featureVectorBufferedReader.readLine();
             }//end while
             featureVectorBufferedReader.close();
         } catch (Exception e) {

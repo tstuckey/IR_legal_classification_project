@@ -1,29 +1,29 @@
 package core;
 
 public class FeatureVectorsCreator {
-    public static boolean DEBUG=true;
-    public static String OPERATION;
+    public static boolean DEBUG = true;
+    public static String OPERATION = "train";
 
     public static void main(String[] args) {
-        if (args.length != 4) {
-            System.out.println("Usage: FeatureVectorsCreator directory_with_src_texts feature-file.txt"  +
+        if (args.length != 5) {
+            System.out.println("Usage: FeatureVectorsCreator directory_with_src_texts feature-file.txt judge-appointer.txt" +
                     " output_directory train/dev/test ");
             System.exit(2);
         }
-        String topDirectory= args[0];
-        String featureFile= args[1];
-        String outputDirectory= args[2];
+        String topDirectory = args[0];
+        String featureFile = args[1];
+        String judgeAppointerFile = args[2];
+        String outputDirectory = args[3];
 
-        switch (args[3].toLowerCase()){
-            case "train": OPERATION="train";
-            case "dev": OPERATION="dev";
-            case "test": OPERATION="test";
-            default: OPERATION="train";
-        }
+        if (args[4].toLowerCase().equals("train")){OPERATION="train";}
+        if (args[4].toLowerCase().equals("dev")){OPERATION="dev";}
+        if (args[4].toLowerCase().equals("test")){OPERATION="test";}
+        System.out.println("Operation is "+OPERATION);
 
         FeaturesProcessor featuresProcessor = new FeaturesProcessor(featureFile);
-        OutputProcessor outputProcessor=new OutputProcessor(outputDirectory,featuresProcessor);
-        DirectoryParser srcTextFiles=new DirectoryParser(topDirectory);
-        new SourceTextProcessor(srcTextFiles.results,featuresProcessor,outputProcessor);
+        JudgeProcessor judgeProcessor = new JudgeProcessor(judgeAppointerFile);
+        DirectoryParser srcTextFiles = new DirectoryParser(topDirectory);
+        OutputProcessor outputProcessor = new OutputProcessor(outputDirectory, featuresProcessor);
+        new SourceTextProcessor(srcTextFiles.results, featuresProcessor, judgeProcessor, outputProcessor);
     }
 }

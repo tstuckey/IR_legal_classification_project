@@ -13,27 +13,45 @@ public class SourceTextProcessor {
     List srcTextFiles;
     FeaturesProcessor featuresProcessor;
     OutputProcessor outputProcessor;
+    Integer docCount;
+    Integer overallWordCount;
 
-    public SourceTextProcessor(List files, FeaturesProcessor featuresProcessor,
+    class CaseInfo {
+        String caseName = "none";
+        String opinionAuthor = "per curiam"; //default meaning general per the court, not Judge specific
+        Integer docWordCount = 0;
+    }
+
+    public SourceTextProcessor(List files, FeaturesProcessor featuresProcessor, JudgeProcessor judgeProcessor,
                                OutputProcessor outputProcessor) {
         this.srcTextFiles = files;
         this.featuresProcessor = featuresProcessor;
         this.outputProcessor = outputProcessor;
+        docCount = 0;
+        overallWordCount = 0;
 
         Iterator<File> myiterator = srcTextFiles.iterator();
         File t_file;
+        //Iterate through the documents
         while (myiterator.hasNext()) {
             t_file = myiterator.next();
             if (FeatureVectorsCreator.DEBUG) {
                 System.out.println("SourceTextProcessor: Processing source text file: " + t_file);
                 try {
+                    //clear out the counts in the featuresProcessor HashMap before we start processing the new file
+                    featuresProcessor.clearFeatureCounts();
+                    docCount++;
                     BufferedReader srcTextBufferedReader = setupInputReader(t_file.getCanonicalPath());
-                    processFile(srcTextBufferedReader);
+                    CaseInfo caseInfo = processFile(srcTextBufferedReader);
+                    writeOutResults(caseInfo, featuresProcessor, judgeProcessor);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
-        }
+        }//end document iteration
+        System.out.println("Total Documents processed: " + docCount);
+        System.out.println("Total Words processed: " + overallWordCount);
+        outputProcessor.closeFiles();//close the file handles
     }
 
     /**
@@ -53,95 +71,130 @@ public class SourceTextProcessor {
         return br;
     }
 
-    /**
-     * Make the line of text lowercase and trim any whitespace off the ends
-     *
-     * @param line
-     * @return normalized string
-     */
-    private String normalizeLine(String line) {
-        if (line == null) {
-            return null;
-        }
-        String tmp = line.toLowerCase();
-        return tmp.trim();
+    private Integer countWordsinLine(String line) {
+        String[] tokens = line.split("[\\s]");
+        return tokens.length;
     }
 
-    private void processFile(BufferedReader srcTextBufferedReader) {
-        //clear out the counts in the featuresProcessor HashMap before we start processing the new file
-        featuresProcessor.clearFeatureCounts();
+    private CaseInfo processFile(BufferedReader srcTextBufferedReader) {
         if (srcTextBufferedReader == null) {
-            return;
+            return null;
         }//just return if the buffered reader is null
+        CaseInfo caseInfo = new CaseInfo();
         try {
-            String caseName = "none";
-            String opinionAuthor = "per curiam"; //default meaning general per the court, not Judge specific
             Boolean checkCaseName = true;
             Boolean checkOpinionAuthor = true;
             Boolean inSyllabusSection = true;
-            Boolean inOpinionSection= false;
+            Boolean inOpinionSection = false;
 
-            String normalizedLine = normalizeLine(srcTextBufferedReader.readLine());
-            while (normalizedLine != null) {
-                if ((inSyllabusSection)&&(checkCaseName)) {
-                    if ((normalizedLine.contains("v.")) &&
-                            !(normalizedLine.contains("see"))
+            String line = srcTextBufferedReader.readLine();
+            while (line != null) {
+                line = line.trim();
+                overallWordCount = overallWordCount + countWordsinLine(line); //keep track of the overall word count as a metric
+                caseInfo.docWordCount = caseInfo.docWordCount + countWordsinLine(line);//keep track of the doc word count as a metric
+                if ((inSyllabusSection) && (checkCaseName)) {
+                    if ((line.toLowerCase().contains("v.")) &&
+                            !(line.toLowerCase().contains("see"))
                             ) {
-                        caseName = normalizedLine;
+                        caseInfo.caseName = line;
                         if (FeatureVectorsCreator.DEBUG) {
-                            System.out.println("\tSourceTextProcessor: Case Name is: " + caseName);
+                            System.out.println("\tSourceTextProcessor: Case Name is: " + caseInfo.caseName);
                         }
                         checkCaseName = false;
                     }
                 }//end checkCaseName
 
-                if ((inSyllabusSection)&&(checkOpinionAuthor)) {
-                    if (normalizedLine.contains("delivered the opinion")) {
-                        opinionAuthor = normalizedLine.substring(0, normalizedLine.indexOf("."));
+                if ((inSyllabusSection) && (checkOpinionAuthor)) {
+                    if (line.toLowerCase().contains("delivered the opinion")) {
+                        caseInfo.opinionAuthor = line.substring(0, line.indexOf("."));
                         if (FeatureVectorsCreator.DEBUG) {
-                            System.out.println("\tSourceTextProcessor: Opinion Author is: " + opinionAuthor);
+                            System.out.println("\tSourceTextProcessor: Opinion Author is: " + caseInfo.opinionAuthor);
                         }
                         checkOpinionAuthor = false;
                     }
                 }//end checkOpinionAuthor
 
                 if (inSyllabusSection) {
-                    if ((normalizedLine.startsWith("opinion of the court")) ||
-                            (normalizedLine.contains("per curiam"))) {
+                    if ((line.toLowerCase().startsWith("opinion of the court")) ||
+                            (line.contains("per curiam"))) {
                         inSyllabusSection = false;
                         inOpinionSection = true;
                     }
                 }//end syllabus processing
                 if (inOpinionSection) {
-                        //OK we're processing the main body of the opinion now
-                        //Iterate through each classification
-                        for (Map.Entry<String, ClassificationType> classificationEntry : featuresProcessor.myClassifications.entrySet()) {
-                            HashMap<String, DocumentInfo> t_featureHash = classificationEntry.getValue().featureHash;
-                            //Iterate through each each feature in the classification
-                            for (Map.Entry<String, DocumentInfo> featureEntry : t_featureHash.entrySet()) {
-                                String thisFeature = featureEntry.getKey();//get the feature text
-                                //check to see if the line of source text cotains thisFeature
-                                if (normalizedLine.contains(thisFeature)) {
-                                    Integer currentFeatureCount = featureEntry.getValue().featureCount;
-                                    featureEntry.getValue().featureCount = currentFeatureCount++;//increment the feature count
-                                    if (FeatureVectorsCreator.DEBUG) {
-                                        System.out.println("\t\t\t\tSourceTextProcessor: got a match on => " + thisFeature);
-                                    }
-                                    classificationEntry.getValue().hasAnyFeatures = true;//if any features for this classification
-                                    // are true, make sure this flag is set to true
+                    //OK we're processing the main body of the opinion now
+                    //Iterate through each classification
+                    for (Map.Entry<String, ClassificationType> classificationEntry : featuresProcessor.myClassifications.entrySet()) {
+                        HashMap<String, DocumentInfo> t_featureHash = classificationEntry.getValue().featureHash;
+                        //System.out.println("\t\t\tSoureTextProcessor: looking at class: "+classificationEntry.getKey());
+                        //Iterate through each each feature in each classification
+                        for (Map.Entry<String, DocumentInfo> featureEntry : t_featureHash.entrySet()) {
+                            String thisFeature = featureEntry.getKey();//get the feature text
+                            //check to see if the line of source text contains thisFeature
+                            if (line.toLowerCase().contains(thisFeature)) {
+                                Integer currentFeatureCount = featureEntry.getValue().featureCount;
+                                featureEntry.getValue().featureCount = currentFeatureCount++;//increment the feature count
+                                if (FeatureVectorsCreator.DEBUG) {
+                                    System.out.println("\t\t\t\tSourceTextProcessor: got a match on class: " + classificationEntry.getKey() + " | for feature: " + thisFeature);
                                 }
-                            }
-                        }
+                                classificationEntry.getValue().hasAnyFeatures = true;//if any features for this classification
+                                // are true, make sure this flag is set to true
+                            }//end if the feature is contained
+                        }//end feature iteration
+                    }//end classification iteration
                 } //end opinion processing
-                normalizedLine = normalizeLine(srcTextBufferedReader.readLine());
-            }//end while
+                line = srcTextBufferedReader.readLine();
+            }//end line processing
             srcTextBufferedReader.close();
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("processFile had a problem: " + e.getMessage());
             System.exit(3);
         }
+        return caseInfo;
     }
 
+    private void writeOutResults(CaseInfo caseInfo, FeaturesProcessor featuresProcessor, JudgeProcessor judgeProcessor) {
+        JudgeProcessor.JudgeAppointerPair ja = judgeProcessor.lookupAppointer(caseInfo.opinionAuthor);
+        outputProcessor.writeSummaryEntry(caseInfo.caseName + "\t" + ja.judgeFullName + "\t" + ja.appointerAndParty + "\t" + caseInfo.docWordCount);
+
+        //iterate through the classifiers and write out the info
+        for (Map.Entry<String, ClassificationType> classificationTypeEntry : featuresProcessor.myClassifications.entrySet()) {
+            if (classificationTypeEntry.getValue().hasAnyFeatures) {
+                System.out.println("YES, we had some features! for class: "+classificationTypeEntry.getKey());
+                //had some features
+                Integer relevance = getRelevance(true, FeatureVectorsCreator.OPERATION);
+                outputProcessor.writeClassifierEntry(classificationTypeEntry.getKey(), relevance.toString());
+            } else {
+                System.out.println("NO, we had no features for class: "+classificationTypeEntry.getKey());
+                //had no features
+                Integer relevance = getRelevance(false, FeatureVectorsCreator.OPERATION);
+                outputProcessor.writeClassifierEntry(classificationTypeEntry.getKey(), relevance.toString());
+            }
+        }//end classification entry iteration
+    }
+
+    /**
+     * Determine the value of relevance to put return based on relevance and the mode of operation we are in.
+     * Training and Dev mode, we write a 1 or a -1 based on the boolean parameter
+     * Test mode, we always write a 0 as SVM will compute it for us
+     *
+     * @param hadFeatures
+     * @param operation
+     * @return
+     */
+    private Integer getRelevance(boolean hadFeatures, String operation) {
+        Integer relevant = -1;
+        if ((hadFeatures) && operation.equals("train")){
+            relevant =1;
+        }
+        if ((hadFeatures) && operation.equals("dev")){
+            relevant =1;
+        }
+        if (operation.equals("test")){
+            relevant=0;
+        }
+        return relevant;
+    }
 
 }

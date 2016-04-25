@@ -405,8 +405,8 @@
 <font NAME="SansSerif" SIZE="14"/>
 <node COLOR="#000000" CREATED="1458423882303" ID="ID_327626874" MODIFIED="1461091752813" STYLE="fork" TEXT="Data Prep process">
 <edge STYLE="bezier" WIDTH="thin"/>
-<node COLOR="#000000" CREATED="1461091729358" FOLDED="true" ID="ID_1454260706" MODIFIED="1461342947905" STYLE="fork" TEXT="misc">
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458425560201" ID="ID_414112479" MODIFIED="1461342944208" STYLE="fork" TEXT="Research and Build seperate lookups for">
+<node COLOR="#000000" CREATED="1461091729358" ID="ID_1454260706" MODIFIED="1461529018500" STYLE="fork" TEXT="misc">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458425560201" FOLDED="true" ID="ID_414112479" MODIFIED="1461529385785" STYLE="fork" TEXT="Research and Build seperate lookups for">
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458425589791" ID="ID_395549327" MODIFIED="1461266567071" TEXT="Each judge who served on the Supreme Court from 2003-2015"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458425628213" ID="ID_944037971" MODIFIED="1461266567071" TEXT="Each President and party who appointed the judge"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458363967661" ID="ID_1769625104" LINK="https://en.wikipedia.org/wiki/List_of_Justices_of_the_Supreme_Court_of_the_United_States" MODIFIED="1461266567072" STYLE="fork">
@@ -842,7 +842,7 @@
 </node>
 </node>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1457586979022" FOLDED="true" ID="ID_46049087" LINK="http://www.supremecourt.gov/opinions/opinions.aspx" MODIFIED="1461342938769" STYLE="fork">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1457586979022" ID="ID_46049087" LINK="http://www.supremecourt.gov/opinions/opinions.aspx" MODIFIED="1461528979429" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     

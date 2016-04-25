@@ -45,7 +45,7 @@ public class OutputProcessor {
             Files.deleteIfExists(FileSystems.getDefault().getPath(filename));
             File t_file = new File(filename);//create the handle
             t_file.createNewFile();//touch the file
-            mybufferedWriter = new BufferedWriter(new FileWriter(t_file));
+            mybufferedWriter = new BufferedWriter(new FileWriter(t_file,true));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -62,6 +62,64 @@ public class OutputProcessor {
             featureVectorFileProcessing.writeDocumentInfo(docID, termsInfo);
         }
         featureVectorFileProcessing.closeFile();*/
+    }
+
+    /**
+     * Writeout the line of text and follow it up with a newline
+      * @param values
+     */
+   public void writeSummaryEntry(String values){
+       try {
+           summaryFileBufferedWriter.write(values);
+           summaryFileBufferedWriter.newLine();
+       } catch (IOException e) {
+           e.printStackTrace();
+       }
+   }
+
+
+    /**
+     * Find the BufferedWriter for the classifer
+     * @param classifer
+     * @return BufferedWriter referecne
+     */
+    private BufferedWriter getAppropriateBufferedWriter(String classifer){
+       BufferedWriter correctBW=null;
+        for (Map.Entry<String, BufferedWriter>bwEntry : featureFileBufferedWriters.entrySet()){
+            if (bwEntry.getKey().equals(classifer)){
+                correctBW = bwEntry.getValue();
+            }
+        }
+        return correctBW;
+    }
+
+    /**
+     * Writeout the line of text and follow it up with a newline
+     * @param values
+     */
+    public void writeClassifierEntry(String classifier, String values){
+        BufferedWriter bw = getAppropriateBufferedWriter(classifier);
+        if (bw==null){return;}//just head back if there isn't a BufferedWriter reference
+        try {
+            bw.write(values);
+            bw.newLine();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void closeFiles(){
+        try {
+            summaryFileBufferedWriter.flush();
+            summaryFileBufferedWriter.close();
+            for (Map.Entry<String,BufferedWriter>bwEntry : featureFileBufferedWriters.entrySet()){
+                bwEntry.getValue().flush();
+                bwEntry.getValue().close();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
 }

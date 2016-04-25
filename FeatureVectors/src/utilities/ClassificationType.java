@@ -15,17 +15,7 @@ public class ClassificationType {
     }
 
     public void addFeature(String feature, Integer featureID) {
-        if (featureHash.isEmpty()) {
-            //add a feature to the Hash
             featureHash.put(feature,new DocumentInfo(featureID));
-        }
-        if (featureHash.containsKey(feature)) {
-            //just increment the DocumentInfo
-            featureHash.get(feature).featureCount++;
-            hasAnyFeatures = true;
-        }else{
-            featureHash.put(feature,new DocumentInfo(featureID));
-        }
     }
 
 }
