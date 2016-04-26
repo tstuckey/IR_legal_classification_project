@@ -1,7 +1,7 @@
 #!/bin/bash
 #
-mypath=../datasources-converted
-mydestination=../datasources-partitioned
+mypath=../data/datasources-converted
+mydestination=../data/datasources-partitioned
 
 #get to where the script is invoked from
 parent_path=$( cd "$(dirname "${BASH_SOURCE}")" ; pwd -P )

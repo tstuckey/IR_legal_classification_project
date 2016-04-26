@@ -14,7 +14,6 @@ import java.util.Map;
  */
 public class OutputProcessor {
     public final String SUMMARY_INFO_OUTPUT = "_Summary info.txt";
-    public final String FEATURE_FILE_SUFFIX = ".tsv";
     public final String FEATURE_FILE_DELIMTER = "\t";
     public final String SUMMARY_FILE_DELIMTER = "|";
 
@@ -30,8 +29,7 @@ public class OutputProcessor {
             String eachClassification = entry.getKey();
             featureFileBufferedWriters.put(eachClassification,
                     setupOutputWriter(output_directory + File.separator
-                            + FeatureVectorsCreator.OPERATION + "_" + eachClassification
-                            + FEATURE_FILE_SUFFIX));
+                            + FeatureVectorsCreator.OPERATION + "_" + eachClassification.replace(" ","_")));
         }
     }
 

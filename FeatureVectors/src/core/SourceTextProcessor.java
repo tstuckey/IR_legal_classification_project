@@ -4,10 +4,7 @@ import utilities.ClassificationType;
 import utilities.DocumentInfo;
 
 import java.io.*;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class SourceTextProcessor {
     List srcTextFiles;
@@ -204,13 +201,35 @@ public class SourceTextProcessor {
     }
 
     private void iterateThroughFeatures(BufferedWriter bufferedWriter, HashMap<String, DocumentInfo> featureHash){
-        for (Map.Entry<String,DocumentInfo> featureEntry : featureHash.entrySet()){
-            String featureName = featureEntry.getKey();
+        Map<String,DocumentInfo> sortedFeatureHash=getHashSortedbyCount(featureHash);
+        for (Map.Entry<String,DocumentInfo> featureEntry : sortedFeatureHash.entrySet()){
             DocumentInfo documentInfo = featureEntry.getValue();
             if (documentInfo.featureCount>0) {
                 outputProcessor.writeClassifierEntry(bufferedWriter, documentInfo.featureID + ":" + documentInfo.featureCount, false);
             }
         }
+    }
+    /**
+     * Sort regular K,V Hashmap by V
+     * @param unsortedMap
+     * @return sortedMap
+     */
+    private Map<String, DocumentInfo> getHashSortedbyCount(Map<String, DocumentInfo> unsortedMap) {
+        List<Map.Entry<String, DocumentInfo>> list = new LinkedList<Map.Entry<String, DocumentInfo>>(unsortedMap.entrySet());
+        // Sorting the list based on values
+        Collections.sort(list, new Comparator<Map.Entry<String, DocumentInfo>>() {
+            public int compare(Map.Entry<String, DocumentInfo> o1, Map.Entry<String, DocumentInfo> o2) {
+                //sort in descending numeric value order
+                return o1.getValue().featureID.compareTo(o2.getValue().featureID);
+            }
+        });
+
+        // Maintaining insertion order with the help of LinkedList
+        Map<String, DocumentInfo> sortedMap = new LinkedHashMap<String, DocumentInfo>();
+        for (Map.Entry<String, DocumentInfo> entry : list) {
+            sortedMap.put(entry.getKey(), entry.getValue());
+        }
+        return sortedMap;
     }
 
     /**

@@ -3,7 +3,7 @@
 
 directoryPrefix=supremecourt_
 script_name=get_data.sh
-mypath=../datasources
+mypath=../data/datasources
 
 #get to where the script is invoked from
 parent_path=$( cd "$(dirname "${BASH_SOURCE}")" ; pwd -P )
