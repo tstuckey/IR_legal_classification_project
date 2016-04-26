@@ -21,10 +21,11 @@ public class JudgeProcessor {
         processFile(featureVectorBufferedReader);
     }
 
-    public class JudgeAppointerPair{
-       String judgeFullName;
-       String appointerAndParty;
-   }
+    public class JudgeAppointerPair {
+        String judgeFullName;
+        String appointerAndParty;
+    }
+
     /**
      * Create an instance of the BufferedRead to process the feature file
      *
@@ -52,10 +53,10 @@ public class JudgeProcessor {
         try {
             String line = featureVectorBufferedReader.readLine();
             while (line != null) {
-                String [] tokens = line.trim().split("[:]");
-                judgeAppointerMap.put(tokens[0],tokens[1]);
-                if (FeatureVectorsCreator.DEBUG){
-                    System.out.println("JudgeProcessor: judge: "+tokens[0]+" || appointer: "+tokens[1]);
+                String[] tokens = line.trim().split("[:]");
+                judgeAppointerMap.put(tokens[0], tokens[1]);
+                if (FeatureVectorsCreator.DEBUG) {
+                    System.out.println("JudgeProcessor: judge: " + tokens[0] + " || appointer: " + tokens[1]);
                 }
                 line = featureVectorBufferedReader.readLine();
             }//end while
@@ -67,30 +68,37 @@ public class JudgeProcessor {
         }
     }
 
-  private String cleanJudgeName(String name){
-     String cleanName=name.toLowerCase();
-      cleanName=cleanName.substring(0,cleanName.indexOf(","));
-      cleanName=cleanName.replace(".","");
-      cleanName=cleanName.trim();
-     return cleanName;
-  }
+    private String cleanJudgeName(String name) {
+        if ((name.equals("unknown")) ||
+                (name.equals("chief justice")) ||
+                (name.equals("per curiam"))  ||
+                (!name.contains(","))){
+            return name;
+        }
+        String cleanName = name.toLowerCase();
+        cleanName = cleanName.substring(0, cleanName.indexOf(","));
+        cleanName = cleanName.replace(".", "");
+        cleanName = cleanName.trim();
+        return cleanName;
+    }
 
     /**
      * Lookup Appointer for a given judge
+     *
      * @param judge
      * @return
      */
-   public JudgeAppointerPair lookupAppointer(String judge){
-       JudgeAppointerPair judgeAppointerPair=new JudgeAppointerPair();
-       judgeAppointerPair.judgeFullName=null;
-       judgeAppointerPair.appointerAndParty=null;
+    public JudgeAppointerPair lookupAppointer(String judge) {
+        JudgeAppointerPair judgeAppointerPair = new JudgeAppointerPair();
+        judgeAppointerPair.judgeFullName = "unknown";
+        judgeAppointerPair.appointerAndParty = "unknown";
 
-       for (Map.Entry<String,String>judgeEntry: judgeAppointerMap.entrySet()){
-          if (judgeEntry.getKey().toLowerCase().contains(cleanJudgeName(judge))){
-              judgeAppointerPair.judgeFullName=judgeEntry.getKey();
-              judgeAppointerPair.appointerAndParty=judgeEntry.getValue();
-          }
-       }
-       return judgeAppointerPair;
-   }
+        for (Map.Entry<String, String> judgeEntry : judgeAppointerMap.entrySet()) {
+            if (judgeEntry.getKey().toLowerCase().contains(cleanJudgeName(judge))) {
+                judgeAppointerPair.judgeFullName = judgeEntry.getKey();
+                judgeAppointerPair.appointerAndParty = judgeEntry.getValue();
+            }
+        }
+        return judgeAppointerPair;
+    }
 }

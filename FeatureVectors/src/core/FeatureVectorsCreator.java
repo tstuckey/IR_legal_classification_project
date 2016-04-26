@@ -1,7 +1,7 @@
 package core;
 
 public class FeatureVectorsCreator {
-    public static boolean DEBUG = true;
+    public static boolean DEBUG = false;
     public static String OPERATION = "train";
 
     public static void main(String[] args) {
@@ -18,7 +18,6 @@ public class FeatureVectorsCreator {
         if (args[4].toLowerCase().equals("train")){OPERATION="train";}
         if (args[4].toLowerCase().equals("dev")){OPERATION="dev";}
         if (args[4].toLowerCase().equals("test")){OPERATION="test";}
-        System.out.println("Operation is "+OPERATION);
 
         FeaturesProcessor featuresProcessor = new FeaturesProcessor(featureFile);
         JudgeProcessor judgeProcessor = new JudgeProcessor(judgeAppointerFile);

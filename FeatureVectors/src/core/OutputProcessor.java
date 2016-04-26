@@ -13,8 +13,10 @@ import java.util.Map;
  * Handles the reference to the output directory and the file handles thereof
  */
 public class OutputProcessor {
-    public final String SUMMARY_INFO_OUTPUT = "_Summary info.tsv";
+    public final String SUMMARY_INFO_OUTPUT = "_Summary info.txt";
     public final String FEATURE_FILE_SUFFIX = ".tsv";
+    public final String FEATURE_FILE_DELIMTER = "\t";
+    public final String SUMMARY_FILE_DELIMTER = "|";
 
     BufferedWriter summaryFileBufferedWriter;
     HashMap<String, BufferedWriter> featureFileBufferedWriters;
@@ -66,12 +68,16 @@ public class OutputProcessor {
 
     /**
      * Writeout the line of text and follow it up with a newline
-      * @param values
+      * @param value
      */
-   public void writeSummaryEntry(String values){
+   public void writeSummaryEntry(String value, Boolean new_line){
        try {
-           summaryFileBufferedWriter.write(values);
-           summaryFileBufferedWriter.newLine();
+           summaryFileBufferedWriter.write(value);
+           if (new_line){
+               summaryFileBufferedWriter.newLine();
+           }else{
+               summaryFileBufferedWriter.write(SUMMARY_FILE_DELIMTER);
+           }
        } catch (IOException e) {
            e.printStackTrace();
        }
@@ -80,13 +86,16 @@ public class OutputProcessor {
 
     /**
      * Find the BufferedWriter for the classifer
-     * @param classifer
+     * @param classifier
      * @return BufferedWriter referecne
      */
-    private BufferedWriter getAppropriateBufferedWriter(String classifer){
+    public BufferedWriter getAppropriateBufferedWriter(String classifier){
        BufferedWriter correctBW=null;
         for (Map.Entry<String, BufferedWriter>bwEntry : featureFileBufferedWriters.entrySet()){
-            if (bwEntry.getKey().equals(classifer)){
+            //Be sure to test for full string equality between the key and the classifier
+            //as some classifers are subsets of others
+            //A contains test vs a equals test will have contents being written to unintended files
+            if (bwEntry.getKey().equals(classifier)){
                 correctBW = bwEntry.getValue();
             }
         }
@@ -94,15 +103,23 @@ public class OutputProcessor {
     }
 
     /**
-     * Writeout the line of text and follow it up with a newline
-     * @param values
+     * Write out a value and follow it up with either a carriage return (if new_line) is specified
+     * or the delimiter for the feature file
+     * @param classifierBufferedWriter
+     * @param value
+     * @param new_line
      */
-    public void writeClassifierEntry(String classifier, String values){
-        BufferedWriter bw = getAppropriateBufferedWriter(classifier);
-        if (bw==null){return;}//just head back if there isn't a BufferedWriter reference
+    public void writeClassifierEntry(BufferedWriter classifierBufferedWriter, String value, Boolean new_line){
+
+        if (classifierBufferedWriter==null){return;}//just head back if there isn't a BufferedWriter reference
         try {
-            bw.write(values);
-            bw.newLine();
+            if (new_line){
+                classifierBufferedWriter.write(value);
+                classifierBufferedWriter.newLine();
+            }else{
+                classifierBufferedWriter.write(value);
+                classifierBufferedWriter.write(FEATURE_FILE_DELIMTER);
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }

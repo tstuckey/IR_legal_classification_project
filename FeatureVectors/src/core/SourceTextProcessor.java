@@ -37,6 +37,7 @@ public class SourceTextProcessor {
             t_file = myiterator.next();
             if (FeatureVectorsCreator.DEBUG) {
                 System.out.println("SourceTextProcessor: Processing source text file: " + t_file);
+            }
                 try {
                     //clear out the counts in the featuresProcessor HashMap before we start processing the new file
                     featuresProcessor.clearFeatureCounts();
@@ -47,7 +48,6 @@ public class SourceTextProcessor {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }
         }//end document iteration
         System.out.println("Total Documents processed: " + docCount);
         System.out.println("Total Words processed: " + overallWordCount);
@@ -106,7 +106,15 @@ public class SourceTextProcessor {
 
                 if ((inSyllabusSection) && (checkOpinionAuthor)) {
                     if (line.toLowerCase().contains("delivered the opinion")) {
-                        caseInfo.opinionAuthor = line.substring(0, line.indexOf("."));
+                        if (line.toLowerCase().contains("chief justice")){
+                            caseInfo.opinionAuthor = "chief justice";
+                        }else{
+                            if (line.toLowerCase().contains(".")){
+                                caseInfo.opinionAuthor = line.substring(0, line.indexOf("."));
+                            }else{
+                                caseInfo.opinionAuthor = line.substring(0,line.indexOf(" delivered the opinion"));
+                            }
+                        }
                         if (FeatureVectorsCreator.DEBUG) {
                             System.out.println("\tSourceTextProcessor: Opinion Author is: " + caseInfo.opinionAuthor);
                         }
@@ -133,9 +141,10 @@ public class SourceTextProcessor {
                             //check to see if the line of source text contains thisFeature
                             if (line.toLowerCase().contains(thisFeature)) {
                                 Integer currentFeatureCount = featureEntry.getValue().featureCount;
-                                featureEntry.getValue().featureCount = currentFeatureCount++;//increment the feature count
+                                featureEntry.getValue().featureCount = currentFeatureCount+1;//increment the feature count
                                 if (FeatureVectorsCreator.DEBUG) {
                                     System.out.println("\t\t\t\tSourceTextProcessor: got a match on class: " + classificationEntry.getKey() + " | for feature: " + thisFeature);
+                                    System.out.println("\t\t\t\t\t Its featureCount is now: "+featureEntry.getValue().featureCount);
                                 }
                                 classificationEntry.getValue().hasAnyFeatures = true;//if any features for this classification
                                 // are true, make sure this flag is set to true
@@ -154,24 +163,54 @@ public class SourceTextProcessor {
         return caseInfo;
     }
 
+    /**
+     * Write out the Results to the files; this starts off with the summary file and then iterates through each class
+     * (one file per class) for all classes
+     * @param caseInfo
+     * @param featuresProcessor
+     * @param judgeProcessor
+     */
     private void writeOutResults(CaseInfo caseInfo, FeaturesProcessor featuresProcessor, JudgeProcessor judgeProcessor) {
         JudgeProcessor.JudgeAppointerPair ja = judgeProcessor.lookupAppointer(caseInfo.opinionAuthor);
-        outputProcessor.writeSummaryEntry(caseInfo.caseName + "\t" + ja.judgeFullName + "\t" + ja.appointerAndParty + "\t" + caseInfo.docWordCount);
+
+        outputProcessor.writeSummaryEntry(caseInfo.caseName, false);
+        outputProcessor.writeSummaryEntry(ja.judgeFullName, false);
+        outputProcessor.writeSummaryEntry(ja.appointerAndParty, false);
+        outputProcessor.writeSummaryEntry(caseInfo.docWordCount.toString(), true);
 
         //iterate through the classifiers and write out the info
         for (Map.Entry<String, ClassificationType> classificationTypeEntry : featuresProcessor.myClassifications.entrySet()) {
+            //get the appropriate BufferWriter File Handle
+            BufferedWriter bufferedWriter = outputProcessor.getAppropriateBufferedWriter(classificationTypeEntry.getKey());
+
             if (classificationTypeEntry.getValue().hasAnyFeatures) {
-                System.out.println("YES, we had some features! for class: "+classificationTypeEntry.getKey());
+                if (FeatureVectorsCreator.DEBUG) {
+                    System.out.println("YES, on doc: " + docCount + ", we had some features! for class: " + classificationTypeEntry.getKey());
+                }
                 //had some features
                 Integer relevance = getRelevance(true, FeatureVectorsCreator.OPERATION);
-                outputProcessor.writeClassifierEntry(classificationTypeEntry.getKey(), relevance.toString());
+                outputProcessor.writeClassifierEntry(bufferedWriter, relevance.toString(),false);
+                iterateThroughFeatures(bufferedWriter, classificationTypeEntry.getValue().featureHash);
+                outputProcessor.writeClassifierEntry(bufferedWriter,"",true);
             } else {
-                System.out.println("NO, we had no features for class: "+classificationTypeEntry.getKey());
+                if (FeatureVectorsCreator.DEBUG){
+                    System.out.println("NO, on doc: "+docCount+", we had no features for class: "+classificationTypeEntry.getKey());
+                }
                 //had no features
                 Integer relevance = getRelevance(false, FeatureVectorsCreator.OPERATION);
-                outputProcessor.writeClassifierEntry(classificationTypeEntry.getKey(), relevance.toString());
+                outputProcessor.writeClassifierEntry(bufferedWriter, relevance.toString(),true);
             }
         }//end classification entry iteration
+    }
+
+    private void iterateThroughFeatures(BufferedWriter bufferedWriter, HashMap<String, DocumentInfo> featureHash){
+        for (Map.Entry<String,DocumentInfo> featureEntry : featureHash.entrySet()){
+            String featureName = featureEntry.getKey();
+            DocumentInfo documentInfo = featureEntry.getValue();
+            if (documentInfo.featureCount>0) {
+                outputProcessor.writeClassifierEntry(bufferedWriter, documentInfo.featureID + ":" + documentInfo.featureCount, false);
+            }
+        }
     }
 
     /**
