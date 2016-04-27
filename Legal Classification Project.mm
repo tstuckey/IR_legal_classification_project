@@ -998,20 +998,36 @@
     </p>
   </body>
 </html></richcontent>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461292107957" ID="ID_897451875" MODIFIED="1461448455169">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461458127289" ID="ID_1855546449" MODIFIED="1461723843844">
 <richcontent TYPE="NODE"><html>
   <head>
     
   </head>
   <body>
     <p>
-      0: feature-file.txt
+      0: directory_with_text_files
+    </p>
+    <p>
+      for the input files
     </p>
   </body>
 </html>
 </richcontent>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461292293359" ID="ID_662676075" MODIFIED="1461292320598" TEXT="First line of this file has the class: Affirm/Reverse/Remand"/>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461294268920" ID="ID_224048725" MODIFIED="1461294356559">
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461292107957" ID="ID_1077406943" MODIFIED="1461723860733">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      1: feature-file.txt
+    </p>
+  </body>
+</html>
+</richcontent>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461292293359" ID="ID_1250986612" MODIFIED="1461721796330" TEXT="Classifers end with &quot;:&quot;"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461294268920" ID="ID_224387464" MODIFIED="1461721816609">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1021,55 +1037,47 @@
       Subsequent lines have one per line the feature terms and the term ids
     </p>
     <p>
-      termA:0
+      termA|0
     </p>
     <p>
-      termB:1
+      termB|1
     </p>
     <p>
-      termC:2
+      termC|2
     </p>
     <p>
-      termX:n
+      termX|n
     </p>
   </body>
 </html></richcontent>
 </node>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461292107960" ID="ID_666429477" MODIFIED="1461294129083">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461292107960" ID="ID_666429477" MODIFIED="1461723898961">
 <richcontent TYPE="NODE"><html>
   <head>
     
   </head>
   <body>
     <p>
-      1: feature_vector_outputfile.tsv
-    </p>
-    <p>
-      #the name of the tab-separated feature vector output file
+      2: judge appointer file
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461436572953" ID="ID_670633493" MODIFIED="1461436702693">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461436572953" ID="ID_670633493" MODIFIED="1461723934305">
 <richcontent TYPE="NODE"><html>
   <head>
     
   </head>
   <body>
     <p>
-      2. summary_info_outputfile.tsv
-    </p>
-    <p>
-      #name of the tab-separated summary file
-    </p>
-    <p>
-      CaseName&#160;&#160;&#160;&#160;Reader&#160;&#160;&#160;&#160;&#160;Appointer&#160;&#160;&#160;&#160;WordCount
+      3.output directory
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461458127289" ID="ID_1855546449" MODIFIED="1461458157695" TEXT="3: directory_with_text_files"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461292107961" ID="ID_1138564653" MODIFIED="1461458167270">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -1841,6 +1849,127 @@
 <node COLOR="#000000" CREATED="1458426331127" ID="ID_558027113" MODIFIED="1458426337783" STYLE="fork" TEXT="Stats to be provided">
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458423747042" ID="ID_899437857" MODIFIED="1461266567167" STYLE="fork" TEXT="# documents (opinions)"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458423747050" ID="ID_1036464226" MODIFIED="1461266567168" STYLE="fork" TEXT="# mean size (words)"/>
+</node>
+</node>
+<node COLOR="#000000" CREATED="1461721121207" ID="ID_1817445350" MODIFIED="1461721129876" STYLE="fork" TEXT="Run the SVM">
+<edge STYLE="bezier" WIDTH="thin"/>
+<node COLOR="#000000" CREATED="1461721130108" ID="ID_1349282379" MODIFIED="1461721142103" STYLE="fork" TEXT="Train and Dev across each classifier"/>
+<node COLOR="#000000" CREATED="1461721146486" ID="ID_1344637947" MODIFIED="1461721151808" STYLE="fork" TEXT="Test across each classifier"/>
+</node>
+<node COLOR="#000000" CREATED="1461721176284" ID="ID_267263939" MODIFIED="1461723727158" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Build the <b><i>SummarizerProcessor</i></b>
+    </p>
+  </body>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="thin"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1461091989954" ID="ID_1966199028" MODIFIED="1461721630162" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      command line parameters:
+    </p>
+  </body>
+</html></richcontent>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461723979884" ID="ID_1071783488" MODIFIED="1461723988958" TEXT="0: directory with predictions"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461292107957" ID="ID_1851107041" MODIFIED="1461723995045">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      1: feature-file.txt
+    </p>
+  </body>
+</html>
+</richcontent>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461292293359" ID="ID_1450942747" MODIFIED="1461721796330" TEXT="Classifers end with &quot;:&quot;"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461294268920" ID="ID_883480042" MODIFIED="1461721816609">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Subsequent lines have one per line the feature terms and the term ids
+    </p>
+    <p>
+      termA|0
+    </p>
+    <p>
+      termB|1
+    </p>
+    <p>
+      termC|2
+    </p>
+    <p>
+      termX|n
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461724107640" ID="ID_87371611" MODIFIED="1461724113104" TEXT="2. summary output file"/>
+</node>
+<node COLOR="#000000" CREATED="1461721933978" ID="ID_1784189200" MODIFIED="1461722001137" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Grab summary information from each classifer file in the&#160;
+    </p>
+    <p>
+      predictions_test* family
+    </p>
+  </body>
+</html>
+</richcontent>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461722478409" ID="ID_430528380" MODIFIED="1461722522774" TEXT="For summary file">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461722525094" ID="ID_436391163" MODIFIED="1461722561030">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Read line from output file
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461722542772" ID="ID_942632029" MODIFIED="1461722552687" TEXT="Write same line to summarizer file"/>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461722329433" ID="ID_145659870" MODIFIED="1461722375736" TEXT="For each file, pull classifier name from file"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461722376276" ID="ID_1839486182" MODIFIED="1461722610120">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Read one row, if value &gt;1
+    </p>
+    <p>
+      write that classifier to the row of the summarizer file
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
 </node>
 </node>
 </node>

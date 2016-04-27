@@ -21,8 +21,9 @@ public class FeatureVectorsCreator {
 
         FeaturesProcessor featuresProcessor = new FeaturesProcessor(featureFile);
         JudgeProcessor judgeProcessor = new JudgeProcessor(judgeAppointerFile);
-        DirectoryParser srcTextFiles = new DirectoryParser(topDirectory);
+        DirectoryParser directory = new DirectoryParser(topDirectory);
+        directory.getFilesbySuffix(".txt");
         OutputProcessor outputProcessor = new OutputProcessor(outputDirectory, featuresProcessor);
-        new SourceTextProcessor(srcTextFiles.results, featuresProcessor, judgeProcessor, outputProcessor);
+        new SourceTextProcessor(directory.results, featuresProcessor, judgeProcessor, outputProcessor);
     }
 }

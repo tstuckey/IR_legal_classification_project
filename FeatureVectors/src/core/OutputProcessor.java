@@ -13,7 +13,7 @@ import java.util.Map;
  * Handles the reference to the output directory and the file handles thereof
  */
 public class OutputProcessor {
-    public final String SUMMARY_INFO_OUTPUT = "_Summary info.txt";
+    public final String SUMMARY_INFO_OUTPUT_PREFIX = "_Summary_info_";
     public final String FEATURE_FILE_DELIMTER = "\t";
     public final String SUMMARY_FILE_DELIMTER = "|";
 
@@ -22,7 +22,8 @@ public class OutputProcessor {
 
     public OutputProcessor(String output_directory, FeaturesProcessor featuresProcessor) {
         //setup the summary outputfile BufferedWriter
-        summaryFileBufferedWriter = setupOutputWriter(output_directory + File.separator + SUMMARY_INFO_OUTPUT);
+        summaryFileBufferedWriter = setupOutputWriter(output_directory + File.separator
+                + SUMMARY_INFO_OUTPUT_PREFIX + FeatureVectorsCreator.OPERATION );
         featureFileBufferedWriters = new HashMap<>();
         //setup the BufferedWriter for each Classification Type
         for (Map.Entry<String, ClassificationType> entry : featuresProcessor.myClassifications.entrySet()) {
