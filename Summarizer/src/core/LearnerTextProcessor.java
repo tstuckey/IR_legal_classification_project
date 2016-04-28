@@ -8,6 +8,7 @@ import java.util.Map;
 public class LearnerTextProcessor {
     LearnerFiles learnerFiles;
     Integer lineNumber = 0; //for coordinating across files
+    Integer countOfDocsWithSomeClassification = 0;
 
     public LearnerTextProcessor(LearnerFiles learnerFiles, SummaryFiles summaryFiles) {
         this.learnerFiles = learnerFiles;
@@ -28,6 +29,7 @@ public class LearnerTextProcessor {
                 String classifiers = getValidClassifiersForActiveRow();
                 if (!(classifiers == null)) {
                     summaryFiles.writeNewEntry(oldLine+"\t\t"+classifiers, true);
+                    countOfDocsWithSomeClassification=countOfDocsWithSomeClassification+1;
                 } else {
                     //no classifiers so just write out the oldLine
                     summaryFiles.writeNewEntry(oldLine, true);
@@ -40,6 +42,7 @@ public class LearnerTextProcessor {
             System.out.println("processFile had a problem: " + e.getMessage());
             System.exit(3);
         }
+        summaryFiles.writeNewEntry("\n\nWe had "+countOfDocsWithSomeClassification+" with at least one classification",true);
     }
 
     public String getValidClassifiersForActiveRow() {

@@ -1,8 +1,8 @@
 #!/bin/bash
 #
-mypath=../data/datasources
-mydestination=../data/datasources-converted
-tikapath=../lib/tika-app-1.12.jar
+mypath=../../data/datasources
+mydestination=../../data/datasources-converted
+tikapath=../../lib/tika-app-1.12.jar
 
 #get to where the script is invoked from
 parent_path=$( cd "$(dirname "${BASH_SOURCE}")" ; pwd -P )
