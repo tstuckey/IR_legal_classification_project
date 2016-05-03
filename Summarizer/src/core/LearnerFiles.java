@@ -1,8 +1,5 @@
 package core;
 
-import utilities.ClassificationType;
-import utilities.DocumentInfo;
-
 import java.io.*;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -16,6 +13,10 @@ import java.util.Map;
 public class LearnerFiles {
     HashMap<String,LineNumberReader> learerFileBufferedReaders;
 
+    /**
+     * Create the Hashmap of
+     * @param file_list
+     */
     public LearnerFiles(List file_list) {
         learerFileBufferedReaders= new HashMap<>();
         Iterator<File> myiterator = file_list.iterator();
@@ -34,7 +35,12 @@ public class LearnerFiles {
         }
     }
 
-   public String getClassFromFileName(String filename){
+    /**
+     * Extract the name of the
+     * @param filename
+     * @return
+     */
+    public String getClassFromFileName(String filename){
        String classifier=null;
        classifier=filename.substring(filename.indexOf(SummarizerProcessor.LEARNER_PREFIX));
        classifier=classifier.substring(SummarizerProcessor.LEARNER_PREFIX.length());

@@ -1,13 +1,9 @@
 package core;
 
 
-import utilities.ClassificationType;
-
 import java.io.*;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Handles the reference to the output directory and the file handles thereof
@@ -18,10 +14,13 @@ public class SummaryFiles {
     BufferedWriter newSummaryBufferedWriter;
     String SUMMARY_FILE_DELIMTER="\t";
 
+    /**
+     * Setup the class variables to read the old summary file
+     * and to write the new summary file
+     * @param oldSummaryFile
+     * @param newSummaryFile
+     */
     public SummaryFiles(String oldSummaryFile,String newSummaryFile){
-       //establish the Buffered Reader for the old summary file
-       //establish the Buffered Writer for the new summary file
-
         oldSummaryBufferedReader = setupInputReader(oldSummaryFile);
         newSummaryBufferedWriter = setupOutputWriter(newSummaryFile);
     }
@@ -64,6 +63,10 @@ public class SummaryFiles {
         return br;
     }
 
+    /**
+     * Reads a line of text from the existing summary file
+     * @return
+     */
     public String readOldLine(){
         String result=null;
         try{
@@ -75,7 +78,7 @@ public class SummaryFiles {
     }
 
     /**
-     * Writeout the line of text and follow it up with a newline
+     * Writeout the line of text to the new summary file and follow it up with a newline
       * @param value
      */
    public void writeNewEntry(String value, Boolean new_line){
@@ -92,6 +95,9 @@ public class SummaryFiles {
    }
 
 
+    /**
+     * Close the file handles
+     */
     public void closeFiles(){
         try {
             oldSummaryBufferedReader.close();

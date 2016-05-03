@@ -25,7 +25,11 @@ public class DirectoryParser {
             e.printStackTrace();
         }
     }
-    //filter for files with the visibile files with the .txt suffix
+
+    /**
+     * Get files with a given suffix and store the internally in the resutls list
+     * @param suffix
+     */
     public void getFilesbySuffix(String suffix){
         MydirectoryWalker mywalker = new MydirectoryWalker(
                 HiddenFileFilter.VISIBLE,
@@ -34,7 +38,10 @@ public class DirectoryParser {
         results = mywalker.parseDirectory(startDirectory);
     }
 
-    //filter for files with the visibile files with the .txt suffix
+    /**
+     * Get files with a given prefix and store them internally in the results list
+     * @param prefix
+     */
     public void getFilesbyPrefix(String prefix){
         MydirectoryWalker mywalker = new MydirectoryWalker(
                 HiddenFileFilter.VISIBLE,
