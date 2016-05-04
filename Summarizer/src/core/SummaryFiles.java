@@ -26,7 +26,7 @@ public class SummaryFiles {
     }
 
     /**
-     * Setup a BufferedWriter for the given filename
+     * Setup a BufferedWriter for the given filename for the new summary file
      *
      * @param filename
      * @return reference to the new BufferedWriter
@@ -47,7 +47,7 @@ public class SummaryFiles {
     }
 
     /**
-     * Create an instance of the BufferedRread to process the feature file
+     * Create an instance of the BufferedReader to process the old summary file
      *
      * @param readFile
      * @return reference to the BufferedReader

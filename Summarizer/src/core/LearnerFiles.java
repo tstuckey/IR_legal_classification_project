@@ -14,7 +14,9 @@ public class LearnerFiles {
     HashMap<String,LineNumberReader> learerFileBufferedReaders;
 
     /**
-     * Create the Hashmap of
+     * Create LearnerFiles instance and populate the Hashmap with
+     * key: filename of predictions for each classifier
+     * value: LineNumberReader (variant of Buffered Reader)
      * @param file_list
      */
     public LearnerFiles(List file_list) {
@@ -36,9 +38,9 @@ public class LearnerFiles {
     }
 
     /**
-     * Extract the name of the
-     * @param filename
-     * @return
+     * Extract the name of the classifier from the string name
+     * @param filename whole filename being processed
+     * @return the name of the classifer (filename with the LEARNER_PREFIX stripped off)
      */
     public String getClassFromFileName(String filename){
        String classifier=null;
@@ -50,11 +52,8 @@ public class LearnerFiles {
        return classifier;
    }
 
-
-
     /**
-     * Create an instance of the BufferedRread to process the feature file
-     *
+     * Create the LineNumberReader reference for each file
      * @param featureFile
      * @return
      */
@@ -72,7 +71,7 @@ public class LearnerFiles {
     }
 
     /**
-     * Iterate through and close the reader files
+     * Iterate through and close the reader files references
      */
     public void closeFiles(){
         for (Map.Entry<String, LineNumberReader>readerEntry : learerFileBufferedReaders.entrySet()){
