@@ -2762,7 +2762,7 @@
 </html></richcontent>
 </node>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1459617981042" ID="ID_1047729468" LINK="research/WynerPetersJURIX2011.pdf" MODIFIED="1460509690466" STYLE="fork">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1459617981042" FOLDED="true" ID="ID_1047729468" LINK="research/WynerPetersJURIX2011.pdf" MODIFIED="1462341482594" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -3232,7 +3232,7 @@
     </p>
   </body>
 </html></richcontent>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460942744553" ID="ID_1545315977" LINK="research/sentimental%20education.pdf" MODIFIED="1461266567285">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460942744553" ID="ID_1545315977" LINK="research/sentimental%20education.pdf" MODIFIED="1462342307257">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -3249,8 +3249,9 @@
     </p>
   </body>
 </html></richcontent>
+<icon BUILTIN="button_ok"/>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460942978574" ID="ID_1664867779" LINK="research/how%20opinions%20are%20received.pdf" MODIFIED="1461266567291">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460942978574" ID="ID_1664867779" LINK="research/how%20opinions%20are%20received.pdf" MODIFIED="1462414830844">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -3267,8 +3268,9 @@
     </p>
   </body>
 </html></richcontent>
+<icon BUILTIN="button_ok"/>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460943260550" ID="ID_1193689006" LINK="research/Thumbs%20up-%20sentiment%20classification%20using%20machine%20learning%20techniques.pdf" MODIFIED="1461266567296">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1460943260550" ID="ID_1193689006" LINK="research/Thumbs%20up-%20sentiment%20classification%20using%20machine%20learning%20techniques.pdf" MODIFIED="1462415891002">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -3285,6 +3287,7 @@
     </p>
   </body>
 </html></richcontent>
+<icon BUILTIN="button_ok"/>
 </node>
 </node>
 <node COLOR="#000000" CREATED="1460517116016" ID="ID_555791139" LINK="http://www.cs.cornell.edu/courses/cs6742/2015fa/" MODIFIED="1460938011885" STYLE="fork">
