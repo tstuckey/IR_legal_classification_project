@@ -348,7 +348,7 @@
 </node>
 </node>
 </node>
-<node BACKGROUND_COLOR="#cccccc" COLOR="#000000" CREATED="1458237476557" FOLDED="true" ID="ID_1179196030" MODIFIED="1461820408158" POSITION="right" STYLE="bubble">
+<node BACKGROUND_COLOR="#cccccc" COLOR="#000000" CREATED="1458237476557" ID="ID_1179196030" MODIFIED="1462572972152" POSITION="right" STYLE="bubble">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -381,7 +381,7 @@
 </richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458425560201" FOLDED="true" ID="ID_414112479" MODIFIED="1461820264115" STYLE="fork">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458425560201" FOLDED="true" ID="ID_414112479" MODIFIED="1462667403175" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -394,7 +394,7 @@
       Identify which President and which party appointed each
     </p>
     <p>
-      judge for each opinion since 2016 is a Presidential election
+      justice for each opinion since 2016 is a Presidential election
     </p>
     <p>
       year
@@ -403,14 +403,14 @@
       
     </p>
     <p>
-      Research and Build separate lookups for Judges and their appointers:
+      Research and Build separate lookups for justices and their appointers:
     </p>
   </body>
 </html>
 </richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458425589791" ID="ID_395549327" MODIFIED="1461815057087" STYLE="fork" TEXT="Each judge who served on the Supreme Court from 2003-2015"/>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458425628213" ID="ID_944037971" MODIFIED="1461815057087" STYLE="fork" TEXT="Each President and party who appointed the judge"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458425589791" ID="ID_395549327" MODIFIED="1462667403184" STYLE="fork" TEXT="Each justice who served on the Supreme Court from 2003-2015"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458425628213" ID="ID_944037971" MODIFIED="1462667403184" STYLE="fork" TEXT="Each President and party who appointed the justice"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458363967661" ID="ID_1769625104" LINK="https://en.wikipedia.org/wiki/List_of_Justices_of_the_Supreme_Court_of_the_United_States" MODIFIED="1461820257620" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -847,12 +847,135 @@
 <node BACKGROUND_COLOR="#cccccc" COLOR="#000000" CREATED="1458367952276" ID="ID_1268044016" MODIFIED="1461820412217" POSITION="right" STYLE="bubble" TEXT="Approach">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="14"/>
-<node COLOR="#000000" CREATED="1458423882303" FOLDED="true" ID="ID_327626874" MODIFIED="1461820826843" STYLE="fork" TEXT="Data Prep process">
+<node COLOR="#000000" CREATED="1458423882303" ID="ID_327626874" MODIFIED="1462666396755" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Data Overview
+    </p>
+  </body>
+</html>
+</richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
-<node COLOR="#000000" CREATED="1460508198879" FOLDED="true" ID="ID_813977487" MODIFIED="1461820601015" STYLE="fork" TEXT="Ground Truth">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458360917600" ID="ID_708839086" LINK="research/Reading%20Supreme%20Court%20Opinion.pdf" MODIFIED="1462655125646" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Reading a Supreme Court Opinion
+    </p>
+    <p>
+      <font color="#ff0000">pdf </font>
+    </p>
+    <p>
+      <font color="#0000ff" size="1">http://www.americanbar.org/publications/insights_on_law_andsociety/13/fall_2012/how_to_read_a_ussupremecourtopinion.html</font>
+    </p>
+  </body>
+</html></richcontent>
+<edge STYLE="bezier" WIDTH="thin"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458365945110" FOLDED="true" ID="ID_180996339" MODIFIED="1461820544346" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>Syllabus</b>:
+    </p>
+    <p>
+      Summary of the situation; outlines the facts of the case
+    </p>
+    <p>
+      &#160;and the path that the case has taken to get to the
+    </p>
+    <p>
+      Supreme Court
+    </p>
+  </body>
+</html></richcontent>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461343238467" ID="ID_605995295" MODIFIED="1461343746119">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      grep &quot; v\. &quot; *.txt
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458365967762" ID="ID_1885519034" MODIFIED="1461820550153" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>Main Opinion:</b>
+    </p>
+    <p>
+      Court's official opinion;the opinion announces a decision
+    </p>
+    <p>
+      and provides an explanation for the decision by articulating
+    </p>
+    <p>
+      the legal rationale that the justices relied upon to reach the decision
+    </p>
+  </body>
+</html></richcontent>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461344077782" ID="ID_594376246" MODIFIED="1461344077782" TEXT="grep &quot; delivered the opinion &quot; *.txt"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461345104078" ID="ID_740236155" MODIFIED="1461345106561" TEXT="grep &quot;delivered the opinion for a unanimous Court&quot; *.txt"/>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458366352745" FOLDED="true" ID="ID_1083066626" MODIFIED="1462667403188" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>Concurring Opinion(s):</b>
+    </p>
+    <p>
+      justices who agree with the official opinion but who
+    </p>
+    <p>
+      use a different rationale
+    </p>
+  </body>
+</html>
+</richcontent>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461344615331" ID="ID_57097841" MODIFIED="1461344615331" TEXT="grep &quot;concurring in the judgment&quot; *.txt"/>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458366009273" FOLDED="true" ID="ID_179733293" MODIFIED="1462667403191" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>Dissenting Opinion(s): </b>
+    </p>
+    <p>
+      justice(s) who disagree with the main opinion of the court
+    </p>
+  </body>
+</html>
+</richcontent>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461344501141" ID="ID_1453026110" MODIFIED="1461344501141" TEXT="grep &quot;filed a dissenting &quot; *.txt"/>
+</node>
+</node>
+<node COLOR="#000000" CREATED="1460508198879" ID="ID_813977487" MODIFIED="1462571586690" STYLE="fork" TEXT="Ground Truth">
 <edge STYLE="bezier" WIDTH="thin"/>
 <font NAME="SansSerif" SIZE="12"/>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458370428772" FOLDED="true" ID="ID_138439923" MODIFIED="1461815792152" STYLE="fork">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458370428772" ID="ID_138439923" MODIFIED="1462571619912" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -965,7 +1088,7 @@
   </body>
 </html></richcontent>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458360346192" ID="ID_415248398" MODIFIED="1461814905600" STYLE="fork">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458360346192" ID="ID_415248398" MODIFIED="1462667403194" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -978,7 +1101,7 @@
       A dissenting opinion (or dissent) is an opinion in a legal case written
     </p>
     <p>
-      by one or more judges expressing disagreement with the majority opinion
+      by one or more justices expressing disagreement with the majority opinion
     </p>
     <p>
       &#160;of the court which gives rise to its judgment. When not necessarily referring
@@ -987,121 +1110,12 @@
       &#160;to a legal decision, this can also be referred to as a minority report.
     </p>
   </body>
-</html></richcontent>
-</node>
-</node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458360917600" ID="ID_708839086" LINK="research/Reading%20Supreme%20Court%20Opinion.pdf" MODIFIED="1461815806220" STYLE="fork">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      Reading a Supreme Court Opinion
-    </p>
-    <p>
-      <font color="#ff0000">pdf </font>
-    </p>
-    <p>
-      <font color="#0000ff" size="1">http://www.americanbar.org/publications/insights_on_law_andsociety/13/fall_2012/how_to_read_a_ussupremecourtopinion.html</font>
-    </p>
-  </body>
-</html></richcontent>
-<edge STYLE="bezier" WIDTH="thin"/>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458365945110" FOLDED="true" ID="ID_180996339" MODIFIED="1461820544346" STYLE="fork">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <b>Syllabus</b>:
-    </p>
-    <p>
-      Summary of the situation; outlines the facts of the case
-    </p>
-    <p>
-      &#160;and the path that the case has taken to get to the
-    </p>
-    <p>
-      Supreme Court
-    </p>
-  </body>
-</html></richcontent>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461343238467" ID="ID_605995295" MODIFIED="1461343746119">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      grep &quot; v\. &quot; *.txt
-    </p>
-  </body>
-</html></richcontent>
-</node>
-</node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458365967762" ID="ID_1885519034" MODIFIED="1461820550153" STYLE="fork">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <b>Main Opinion:</b>
-    </p>
-    <p>
-      Court's official opinion;the opinion announces a decision
-    </p>
-    <p>
-      and provides an explanation for the decision by articulating
-    </p>
-    <p>
-      the legal rationale that the justices relied upon to reach the decision
-    </p>
-  </body>
-</html></richcontent>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461344077782" ID="ID_594376246" MODIFIED="1461344077782" TEXT="grep &quot; delivered the opinion &quot; *.txt"/>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461345104078" ID="ID_740236155" MODIFIED="1461345106561" TEXT="grep &quot;delivered the opinion for a unanimous Court&quot; *.txt"/>
-</node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458366352745" FOLDED="true" ID="ID_1083066626" MODIFIED="1461815762753" STYLE="fork">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <b>Concurring Opinion(s):</b>
-    </p>
-    <p>
-      Judges who agree with the official opinion but who
-    </p>
-    <p>
-      use a different rationale
-    </p>
-  </body>
-</html></richcontent>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461344615331" ID="ID_57097841" MODIFIED="1461344615331" TEXT="grep &quot;concurring in the judgment&quot; *.txt"/>
-</node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458366009273" FOLDED="true" ID="ID_179733293" MODIFIED="1461815762754" STYLE="fork">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      <b>Dissenting Opinion(s): </b>
-    </p>
-    <p>
-      Judge(s) who disagree with the main opinion of the court
-    </p>
-  </body>
-</html></richcontent>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461344501141" ID="ID_1453026110" MODIFIED="1461344501141" TEXT="grep &quot;filed a dissenting &quot; *.txt"/>
+</html>
+</richcontent>
 </node>
 </node>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1461292371159" FOLDED="true" ID="ID_1252790746" MODIFIED="1461820748765" STYLE="fork">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1461292371159" ID="ID_1252790746" MODIFIED="1462657860940" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1112,7 +1126,7 @@
     </p>
   </body>
 </html></richcontent>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461348632704" ID="ID_600335569" MODIFIED="1461816524904">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461348632704" FOLDED="true" ID="ID_600335569" MODIFIED="1462673707293">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1122,10 +1136,11 @@
       <b>unanimous</b>:
     </p>
     <p>
-      Class 0
+      Class 1
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461345104078" ID="ID_1905928610" MODIFIED="1461812831497">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -1139,7 +1154,7 @@
 </html></richcontent>
 </node>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458368364738" ID="ID_885736478" MODIFIED="1461816524906">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458368364738" ID="ID_885736478" MODIFIED="1462673714395">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1149,10 +1164,11 @@
       <b>affirm</b>:
     </p>
     <p>
-      Class 1
+      Class 2
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461350048370" ID="ID_1047954821" MODIFIED="1461812831528">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -1179,7 +1195,7 @@
 </node>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461527378449" ID="ID_1500418086" MODIFIED="1461812831528" TEXT="&quot;we affirm&quot;"/>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458368367254" ID="ID_656522937" MODIFIED="1461816524909">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458368367254" ID="ID_656522937" MODIFIED="1462673719479">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1189,10 +1205,11 @@
       <b>reverse: </b>
     </p>
     <p>
-      Class 2
+      Class 3
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461350067938" ID="ID_530863478" MODIFIED="1461812831529">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -1242,7 +1259,7 @@
 </html></richcontent>
 </node>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458368397197" ID="ID_1194341119" MODIFIED="1461816524911">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458368397197" ID="ID_1194341119" MODIFIED="1462673725521">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1252,10 +1269,11 @@
       <b>remand</b>:
     </p>
     <p>
-      Class 3
+      Class 4
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461350479672" ID="ID_1014961913" MODIFIED="1461812831529">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -1281,7 +1299,7 @@
 </html></richcontent>
 </node>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461348319714" ID="ID_335411318" MODIFIED="1461816524917">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461348319714" ID="ID_335411318" MODIFIED="1462673730323">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1291,10 +1309,11 @@
       <b>reverse_and_remand: </b>
     </p>
     <p>
-      Class 4
+      Class 5
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461348437228" ID="ID_50089103" MODIFIED="1461812831529">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -1333,7 +1352,21 @@
 </node>
 </node>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1457586979022" FOLDED="true" ID="ID_46049087" LINK="http://www.supremecourt.gov/opinions/opinions.aspx" MODIFIED="1461820747339" STYLE="fork">
+</node>
+<node COLOR="#000000" CREATED="1462657942887" FOLDED="true" ID="ID_1518481332" MODIFIED="1462659423100" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Preparation Overview
+    </p>
+  </body>
+</html>
+</richcontent>
+<edge STYLE="bezier" WIDTH="thin"/>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1457586979022" ID="ID_46049087" LINK="http://www.supremecourt.gov/opinions/opinions.aspx" MODIFIED="1462657978517" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1411,8 +1444,7 @@
     </p>
     <pre style="background-color: #ffffff; color: #000000; font-family: Menlo; font-size: 9.0pt"><font size="3">java -jar </font><font color="#008000" size="3"><b>&quot;$tikapath&quot; </b></font><font size="3">--text </font><font color="#008000" size="3"><b>&quot;$file&quot; </b></font><font color="#5a5a5a" size="3"><i>&gt; &quot;$output</i></font></pre>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <cloud COLOR="#ccccff"/>
 </node>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461814192725" ID="ID_813976489" MODIFIED="1461814215552" TEXT="Remove Duplicates">
@@ -1438,8 +1470,7 @@
       <font size="2"><i>&#160;train train train train train dev dev dev test test test -n 1</i></font>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <cloud COLOR="#ccccff"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458426319726" ID="ID_1262395523" MODIFIED="1461814788099">
 <richcontent TYPE="NODE"><html>
@@ -1451,8 +1482,7 @@
       Train ~70% 704 opinions
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458424293429" ID="ID_952385334" MODIFIED="1461813906353">
 <richcontent TYPE="NODE"><html>
@@ -1464,8 +1494,7 @@
       Dev ~15%&#160;&#160;&#160;142 opinions
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458426322854" ID="ID_23609052" MODIFIED="1461813922051">
 <richcontent TYPE="NODE"><html>
@@ -1477,12 +1506,24 @@
       ~Test 15% 151 opinions
     </p>
   </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+<node COLOR="#000000" CREATED="1462657808654" ID="ID_1587402207" MODIFIED="1462659012218" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Classification Overview
+    </p>
+  </body>
 </html>
 </richcontent>
-</node>
-</node>
-</node>
-<node COLOR="#000000" CREATED="1461091834994" FOLDED="true" ID="ID_801021988" MODIFIED="1461820984411" STYLE="fork">
+<edge STYLE="bezier" WIDTH="thin"/>
+<node COLOR="#000000" CREATED="1461091834994" FOLDED="true" ID="ID_801021988" MODIFIED="1462657901587" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1498,7 +1539,7 @@
 </html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
 <cloud COLOR="#ccffcc"/>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1461091989954" FOLDED="true" ID="ID_1608437865" MODIFIED="1461816646388" STYLE="fork">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461091989954" FOLDED="true" ID="ID_1608437865" MODIFIED="1462657820649" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1599,17 +1640,18 @@
 </html></richcontent>
 </node>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461292107960" ID="ID_666429477" MODIFIED="1461812831493">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461292107960" ID="ID_666429477" MODIFIED="1462667403196">
 <richcontent TYPE="NODE"><html>
   <head>
     
   </head>
   <body>
     <p>
-      2: judge appointer lookup file
+      2: justice appointer lookup file
     </p>
   </body>
-</html></richcontent>
+</html>
+</richcontent>
 </node>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461436572953" ID="ID_670633493" MODIFIED="1461812831493">
 <richcontent TYPE="NODE"><html>
@@ -1642,7 +1684,7 @@
 </html></richcontent>
 </node>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1461292347191" FOLDED="true" ID="ID_1915915726" MODIFIED="1461820982704" STYLE="fork" TEXT="Read and parse the feature-file.tsv">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461292347191" FOLDED="true" ID="ID_1915915726" MODIFIED="1462657820650" STYLE="fork" TEXT="Read and parse the feature-file.tsv">
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461292371159" ID="ID_1753794788" MODIFIED="1461816627389" TEXT="Identify the class we&apos;re looking at">
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461348632704" ID="ID_1360574076" MODIFIED="1461816627391">
 <richcontent TYPE="NODE"><html>
@@ -2027,7 +2069,7 @@
 </node>
 </node>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1461292916607" ID="ID_1548186136" MODIFIED="1461816627421" STYLE="fork" TEXT="For each text file (*.txt) in the directory">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461292916607" ID="ID_1548186136" MODIFIED="1462657820654" STYLE="fork" TEXT="For each text file (*.txt) in the directory">
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461474993449" ID="ID_1238151036" MODIFIED="1461812831536" TEXT="Reset the HashMap"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461293077876" ID="ID_1720843915" MODIFIED="1461816627426" TEXT="Read each line of text">
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461446127237" ID="ID_643610187" MODIFIED="1461816627429" TEXT="Set checkCaseName flag">
@@ -2202,7 +2244,7 @@
 </node>
 </node>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1461293666678" ID="ID_1073270410" MODIFIED="1461816627450" STYLE="fork" TEXT="At the end of of each txt file, create or append to the two files">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461293666678" ID="ID_1073270410" MODIFIED="1462657820658" STYLE="fork" TEXT="At the end of of each txt file, create or append to the two files">
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461448074301" ID="ID_1533871642" MODIFIED="1461816627453">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -2325,7 +2367,7 @@
 </node>
 </node>
 </node>
-<node COLOR="#000000" CREATED="1461721121207" FOLDED="true" ID="ID_1817445350" MODIFIED="1461821028167" STYLE="fork">
+<node COLOR="#000000" CREATED="1461721121207" FOLDED="true" ID="ID_1817445350" MODIFIED="1462657731457" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -2338,11 +2380,10 @@
       run SVM<sup>light</sup>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
 <cloud COLOR="#ccccff"/>
-<node COLOR="#000000" CREATED="1461721130108" ID="ID_1349282379" MODIFIED="1461816001350" STYLE="fork">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461721130108" ID="ID_1349282379" MODIFIED="1462657824609" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -2352,15 +2393,14 @@
       Train each model against each classifier
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461812606277" ID="ID_149750075" MODIFIED="1461812606277" TEXT="unanimous"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461812606281" ID="ID_1920863096" MODIFIED="1461812606281" TEXT="affirm"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461812606284" ID="ID_425081962" MODIFIED="1461812606293" TEXT="reverse"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461812606298" ID="ID_1711059306" MODIFIED="1461812606300" TEXT="remand"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461812606301" ID="ID_1030575366" MODIFIED="1461812606301" TEXT="reverse and remanded"/>
 </node>
-<node COLOR="#000000" CREATED="1461721146486" ID="ID_1344637947" MODIFIED="1461816020057" STYLE="fork">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461721146486" ID="ID_1344637947" MODIFIED="1462657824611" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -2370,15 +2410,14 @@
       Validate each model across each classifier
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461812610713" ID="ID_1444943934" MODIFIED="1461812624942" TEXT="unanimous"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461812610726" ID="ID_1852829674" MODIFIED="1461812619176" TEXT="affirm"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461812610727" ID="ID_24487172" MODIFIED="1461812619175" TEXT="reverse"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461812610728" ID="ID_1247340293" MODIFIED="1461812619175" TEXT="remand"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461812610728" ID="ID_557651561" MODIFIED="1461812619173" TEXT="reverse and remanded"/>
 </node>
-<node COLOR="#000000" CREATED="1461721130108" ID="ID_703340417" MODIFIED="1461816044542" STYLE="fork">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461721130108" ID="ID_703340417" MODIFIED="1462657824612" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -2388,8 +2427,7 @@
       Test each model each classifier on unknown data
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461812606277" ID="ID_881685360" MODIFIED="1461812606277" TEXT="unanimous"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461812606281" ID="ID_1872527171" MODIFIED="1461812606281" TEXT="affirm"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461812606284" ID="ID_1720671491" MODIFIED="1461812606293" TEXT="reverse"/>
@@ -2397,7 +2435,7 @@
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461812606301" ID="ID_50851727" MODIFIED="1461812606301" TEXT="reverse and remanded"/>
 </node>
 </node>
-<node COLOR="#000000" CREATED="1461721176284" FOLDED="true" ID="ID_267263939" MODIFIED="1461821090115" STYLE="fork">
+<node COLOR="#000000" CREATED="1461721176284" FOLDED="true" ID="ID_267263939" MODIFIED="1462657735066" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -2407,11 +2445,10 @@
       Build the <b><i>SummarizerProcessor</i></b>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
 <cloud COLOR="#ccffcc"/>
-<node COLOR="#000000" CREATED="1461091989954" ID="ID_1966199028" MODIFIED="1461812087073" STYLE="fork">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461091989954" ID="ID_1966199028" MODIFIED="1462657826436" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -2433,8 +2470,7 @@
       1: feature-file.txt
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461292293359" ID="ID_1450942747" MODIFIED="1461721796330" TEXT="Classifers end with &quot;:&quot;"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461294268920" ID="ID_883480042" MODIFIED="1461721816609">
 <richcontent TYPE="NODE"><html>
@@ -2458,13 +2494,12 @@
       termX|n
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461724107640" ID="ID_87371611" MODIFIED="1461724113104" TEXT="2. summary output file"/>
 </node>
-<node COLOR="#000000" CREATED="1461721933978" ID="ID_1784189200" MODIFIED="1461722001137" STYLE="fork">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461721933978" ID="ID_1784189200" MODIFIED="1462657826437" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -2477,8 +2512,7 @@
       predictions_test* family
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461722478409" ID="ID_430528380" MODIFIED="1461722522774" TEXT="For summary file">
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461722525094" ID="ID_436391163" MODIFIED="1461722561030">
 <richcontent TYPE="NODE"><html>
@@ -2490,8 +2524,7 @@
       Read line from output file
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461722542772" ID="ID_942632029" MODIFIED="1461722552687" TEXT="Write same line to summarizer file"/>
 </node>
@@ -2509,13 +2542,24 @@
       write that classifier to the row of the summarizer file
     </p>
   </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node BACKGROUND_COLOR="#cccccc" COLOR="#000000" CREATED="1461816591351" ID="ID_43477493" MODIFIED="1462659052704" POSITION="right" STYLE="bubble">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Results and Discussion
+    </p>
+  </body>
 </html>
 </richcontent>
-</node>
-</node>
-</node>
-</node>
-<node BACKGROUND_COLOR="#cccccc" COLOR="#000000" CREATED="1461816591351" ID="ID_43477493" MODIFIED="1461821092130" POSITION="right" STYLE="bubble" TEXT="Results">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="14"/>
 <node COLOR="#000000" CREATED="1461816960781" ID="ID_1880844082" MODIFIED="1461818156478" STYLE="fork" TEXT="90 documents of the 150 in the test set had at least one classification">
@@ -2762,7 +2806,7 @@
 </html></richcontent>
 </node>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1459617981042" FOLDED="true" ID="ID_1047729468" LINK="research/WynerPetersJURIX2011.pdf" MODIFIED="1462341482594" STYLE="fork">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1459617981042" FOLDED="true" ID="ID_1047729468" LINK="research/WynerPetersJURIX2011.pdf" MODIFIED="1462570332492" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -3341,7 +3385,7 @@
 </html></richcontent>
 </node>
 </node>
-<node COLOR="#000000" CREATED="1457590302890" ID="ID_329525372" LINK="http://www.dcs.gla.ac.uk/Keith/Chapter.3/Ch.3.html" MODIFIED="1460509674523" STYLE="fork">
+<node COLOR="#000000" CREATED="1457590302890" FOLDED="true" ID="ID_329525372" LINK="http://www.dcs.gla.ac.uk/Keith/Chapter.3/Ch.3.html" MODIFIED="1462570339420" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
