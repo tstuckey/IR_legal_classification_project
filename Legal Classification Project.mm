@@ -844,10 +844,10 @@
 </node>
 </node>
 </node>
-<node BACKGROUND_COLOR="#cccccc" COLOR="#000000" CREATED="1458367952276" ID="ID_1268044016" MODIFIED="1461820412217" POSITION="right" STYLE="bubble" TEXT="Approach">
+<node BACKGROUND_COLOR="#cccccc" COLOR="#000000" CREATED="1458367952276" ID="ID_1268044016" MODIFIED="1462760587956" POSITION="right" STYLE="bubble" TEXT="Approach">
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="14"/>
-<node COLOR="#000000" CREATED="1458423882303" ID="ID_327626874" MODIFIED="1462666396755" STYLE="fork">
+<node COLOR="#000000" CREATED="1458423882303" ID="ID_327626874" MODIFIED="1462760594886" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1115,7 +1115,7 @@
 </node>
 </node>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1461292371159" ID="ID_1252790746" MODIFIED="1462657860940" STYLE="fork">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1461292371159" ID="ID_198919053" MODIFIED="1462675253980" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1126,7 +1126,7 @@
     </p>
   </body>
 </html></richcontent>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461348632704" FOLDED="true" ID="ID_600335569" MODIFIED="1462673707293">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461348632704" ID="ID_957032284" MODIFIED="1462675260820">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1139,22 +1139,9 @@
       Class 1
     </p>
   </body>
-</html>
-</richcontent>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461345104078" ID="ID_1905928610" MODIFIED="1461812831497">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      &quot;for a unanimous Court&quot;
-    </p>
-  </body>
 </html></richcontent>
 </node>
-</node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458368364738" ID="ID_885736478" MODIFIED="1462673714395">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458368364738" ID="ID_1769729297" MODIFIED="1462673714395">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1167,35 +1154,9 @@
       Class 2
     </p>
   </body>
-</html>
-</richcontent>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461350048370" ID="ID_1047954821" MODIFIED="1461812831528">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      &quot;court affirms&quot;
-    </p>
-  </body>
 </html></richcontent>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461350053386" ID="ID_1055821974" MODIFIED="1461812831528">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      &quot;is affirmed&quot;
-    </p>
-  </body>
-</html></richcontent>
-</node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461527378449" ID="ID_1500418086" MODIFIED="1461812831528" TEXT="&quot;we affirm&quot;"/>
-</node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458368367254" ID="ID_656522937" MODIFIED="1462673719479">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458368367254" ID="ID_765655187" MODIFIED="1462673719479">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1208,58 +1169,9 @@
       Class 3
     </p>
   </body>
-</html>
-</richcontent>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461350067938" ID="ID_530863478" MODIFIED="1461812831529">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      &quot;court reverses&quot;
-    </p>
-  </body>
 </html></richcontent>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461350403773" ID="ID_741383578" MODIFIED="1461812831529">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      &quot;is reversed&quot;
-    </p>
-  </body>
-</html></richcontent>
-</node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461350727850" ID="ID_599723849" MODIFIED="1461812831529">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      &quot;court vacates&quot;
-    </p>
-  </body>
-</html></richcontent>
-</node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461350751419" ID="ID_756791525" MODIFIED="1461812831529">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      &quot;is vacated&quot;
-    </p>
-  </body>
-</html></richcontent>
-</node>
-</node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458368397197" ID="ID_1194341119" MODIFIED="1462673725521">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458368397197" ID="ID_694513521" MODIFIED="1462673725521">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1272,34 +1184,9 @@
       Class 4
     </p>
   </body>
-</html>
-</richcontent>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461350479672" ID="ID_1014961913" MODIFIED="1461812831529">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      &quot;court remands&quot;
-    </p>
-  </body>
 </html></richcontent>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461350430461" ID="ID_1127706280" MODIFIED="1461812831529">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      &quot;is remanded&quot;
-    </p>
-  </body>
-</html></richcontent>
-</node>
-</node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461348319714" ID="ID_335411318" MODIFIED="1462673730323">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461348319714" ID="ID_208690827" MODIFIED="1462673730323">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1312,48 +1199,11 @@
       Class 5
     </p>
   </body>
-</html>
-</richcontent>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461348437228" ID="ID_50089103" MODIFIED="1461812831529">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      &quot;reverses and remands&quot;
-    </p>
-  </body>
-</html></richcontent>
-</node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461348445234" ID="ID_1963021497" MODIFIED="1461812831530">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      &quot;reverse and remand&quot;
-    </p>
-  </body>
-</html></richcontent>
-</node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461350574711" ID="ID_1609076177" MODIFIED="1461812831530">
-<richcontent TYPE="NODE"><html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      &quot;reversed and remanded&quot;
-    </p>
-  </body>
 </html></richcontent>
 </node>
 </node>
 </node>
-</node>
-<node COLOR="#000000" CREATED="1462657942887" FOLDED="true" ID="ID_1518481332" MODIFIED="1462659423100" STYLE="fork">
+<node COLOR="#000000" CREATED="1462657942887" ID="ID_1518481332" MODIFIED="1462737182217" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1381,7 +1231,7 @@
   </body>
 </html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1457919956683" FOLDED="true" ID="ID_1259561898" MODIFIED="1461814861893" STYLE="fork">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1457919956683" ID="ID_1259561898" MODIFIED="1462676959163" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1451,7 +1301,239 @@
 <cloud COLOR="#ccccff"/>
 </node>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458424269593" ID="ID_673408373" MODIFIED="1461816465733" STYLE="fork">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1461292371159" ID="ID_1252790746" MODIFIED="1462675253980" STYLE="fork">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Our Binary Classifiers
+    </p>
+  </body>
+</html></richcontent>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461348632704" ID="ID_600335569" MODIFIED="1462675288488">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>unanimous</b>:
+    </p>
+    <p>
+      Class 1
+    </p>
+  </body>
+</html></richcontent>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461345104078" ID="ID_1905928610" MODIFIED="1461812831497">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &quot;for a unanimous Court&quot;
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458368364738" ID="ID_885736478" MODIFIED="1462673714395">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>affirm</b>:
+    </p>
+    <p>
+      Class 2
+    </p>
+  </body>
+</html></richcontent>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461350048370" ID="ID_1047954821" MODIFIED="1461812831528">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &quot;court affirms&quot;
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461350053386" ID="ID_1055821974" MODIFIED="1461812831528">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &quot;is affirmed&quot;
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461527378449" ID="ID_1500418086" MODIFIED="1461812831528" TEXT="&quot;we affirm&quot;"/>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458368367254" ID="ID_656522937" MODIFIED="1462673719479">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>reverse: </b>
+    </p>
+    <p>
+      Class 3
+    </p>
+  </body>
+</html></richcontent>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461350067938" ID="ID_530863478" MODIFIED="1461812831529">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &quot;court reverses&quot;
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461350403773" ID="ID_741383578" MODIFIED="1461812831529">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &quot;is reversed&quot;
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461350727850" ID="ID_599723849" MODIFIED="1461812831529">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &quot;court vacates&quot;
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461350751419" ID="ID_756791525" MODIFIED="1461812831529">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &quot;is vacated&quot;
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458368397197" ID="ID_1194341119" MODIFIED="1462673725521">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>remand</b>:
+    </p>
+    <p>
+      Class 4
+    </p>
+  </body>
+</html></richcontent>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461350479672" ID="ID_1014961913" MODIFIED="1461812831529">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &quot;court remands&quot;
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461350430461" ID="ID_1127706280" MODIFIED="1461812831529">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &quot;is remanded&quot;
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461348319714" ID="ID_335411318" MODIFIED="1462673730323">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <b>reverse_and_remand: </b>
+    </p>
+    <p>
+      Class 5
+    </p>
+  </body>
+</html></richcontent>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461348437228" ID="ID_50089103" MODIFIED="1461812831529">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &quot;reverses and remands&quot;
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461348445234" ID="ID_1963021497" MODIFIED="1461812831530">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &quot;reverse and remand&quot;
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461350574711" ID="ID_1609076177" MODIFIED="1461812831530">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      &quot;reversed and remanded&quot;
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458424269593" ID="ID_673408373" MODIFIED="1462727328350" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -1523,7 +1605,7 @@
 </html>
 </richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
-<node COLOR="#000000" CREATED="1461091834994" FOLDED="true" ID="ID_801021988" MODIFIED="1462657901587" STYLE="fork">
+<node COLOR="#000000" CREATED="1461091834994" ID="ID_801021988" MODIFIED="1462730983021" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -2367,7 +2449,7 @@
 </node>
 </node>
 </node>
-<node COLOR="#000000" CREATED="1461721121207" FOLDED="true" ID="ID_1817445350" MODIFIED="1462657731457" STYLE="fork">
+<node COLOR="#000000" CREATED="1461721121207" ID="ID_1817445350" MODIFIED="1462730985238" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -2435,7 +2517,7 @@
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461812606301" ID="ID_50851727" MODIFIED="1461812606301" TEXT="reverse and remanded"/>
 </node>
 </node>
-<node COLOR="#000000" CREATED="1461721176284" FOLDED="true" ID="ID_267263939" MODIFIED="1462657735066" STYLE="fork">
+<node COLOR="#000000" CREATED="1461721176284" ID="ID_267263939" MODIFIED="1462730987109" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -2715,7 +2797,7 @@
 </html></richcontent>
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="14"/>
-<node COLOR="#000000" CREATED="1460478113108" ID="ID_416843898" LINK="research/Legal%20Docket-Entry%20Classification-%20Where%20Machine%20Learning%20stumbles.pdf" MODIFIED="1460508829977" STYLE="fork">
+<node COLOR="#000000" CREATED="1460478113108" FOLDED="true" ID="ID_416843898" LINK="research/Legal%20Docket-Entry%20Classification-%20Where%20Machine%20Learning%20stumbles.pdf" MODIFIED="1462739438116" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -2733,6 +2815,7 @@
   </body>
 </html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
+<icon BUILTIN="button_ok"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1460486122694" ID="ID_224311022" MODIFIED="1460508829978" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -2806,7 +2889,7 @@
 </html></richcontent>
 </node>
 </node>
-<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1459617981042" FOLDED="true" ID="ID_1047729468" LINK="research/WynerPetersJURIX2011.pdf" MODIFIED="1462570332492" STYLE="fork">
+<node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1459617981042" FOLDED="true" ID="ID_1047729468" LINK="research/WynerPetersJURIX2011.pdf" MODIFIED="1462739799097" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -2821,6 +2904,7 @@
   </body>
 </html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
+<icon BUILTIN="button_ok"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1460487257696" ID="ID_1948229107" MODIFIED="1460509690467" STYLE="fork">
 <richcontent TYPE="NODE"><html>
   <head>
