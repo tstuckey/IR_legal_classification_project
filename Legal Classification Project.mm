@@ -19,7 +19,7 @@
 </html></richcontent>
 <font NAME="SansSerif" SIZE="18"/>
 <hook NAME="accessories/plugins/AutomaticLayout.properties"/>
-<node BACKGROUND_COLOR="#cccccc" COLOR="#000000" CREATED="1454775214688" FOLDED="true" ID="ID_1752010669" MODIFIED="1462322279282" POSITION="left" STYLE="bubble">
+<node BACKGROUND_COLOR="#cccccc" COLOR="#000000" CREATED="1454775214688" ID="ID_1752010669" MODIFIED="1463009834592" POSITION="left" STYLE="bubble">
 <richcontent TYPE="NODE"><html>
   <head>
     
@@ -377,8 +377,7 @@
       &#160;opinions of the Supreme Court
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
 </node>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458425560201" FOLDED="true" ID="ID_414112479" MODIFIED="1462667403175" STYLE="fork">
@@ -406,8 +405,7 @@
       Research and Build separate lookups for justices and their appointers:
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458425589791" ID="ID_395549327" MODIFIED="1462667403184" STYLE="fork" TEXT="Each justice who served on the Supreme Court from 2003-2015"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458425628213" ID="ID_944037971" MODIFIED="1462667403184" STYLE="fork" TEXT="Each President and party who appointed the justice"/>
@@ -857,8 +855,7 @@
       Data Overview
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1458360917600" ID="ID_708839086" LINK="research/Reading%20Supreme%20Court%20Opinion.pdf" MODIFIED="1462655125646" STYLE="fork">
 <richcontent TYPE="NODE"><html>
@@ -950,8 +947,7 @@
       use a different rationale
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461344615331" ID="ID_57097841" MODIFIED="1461344615331" TEXT="grep &quot;concurring in the judgment&quot; *.txt"/>
 </node>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1458366009273" FOLDED="true" ID="ID_179733293" MODIFIED="1462667403191" STYLE="fork">
@@ -967,8 +963,7 @@
       justice(s) who disagree with the main opinion of the court
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461344501141" ID="ID_1453026110" MODIFIED="1461344501141" TEXT="grep &quot;filed a dissenting &quot; *.txt"/>
 </node>
 </node>
@@ -1110,8 +1105,7 @@
       &#160;to a legal decision, this can also be referred to as a minority report.
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
@@ -1213,8 +1207,7 @@
       Preparation Overview
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#000000" CREATED="1457586979022" ID="ID_46049087" LINK="http://www.supremecourt.gov/opinions/opinions.aspx" MODIFIED="1462657978517" STYLE="fork">
 <richcontent TYPE="NODE"><html>
@@ -1602,8 +1595,7 @@
       Classification Overview
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
 <node COLOR="#000000" CREATED="1461091834994" ID="ID_801021988" MODIFIED="1462730983021" STYLE="fork">
 <richcontent TYPE="NODE"><html>
@@ -1732,8 +1724,7 @@
       2: justice appointer lookup file
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 <node BACKGROUND_COLOR="#ffffff" COLOR="#111111" CREATED="1461436572953" ID="ID_670633493" MODIFIED="1461812831493">
 <richcontent TYPE="NODE"><html>
@@ -2640,8 +2631,7 @@
       Results and Discussion
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <edge STYLE="sharp_bezier" WIDTH="8"/>
 <font NAME="SansSerif" SIZE="14"/>
 <node COLOR="#000000" CREATED="1461816960781" ID="ID_1880844082" MODIFIED="1461818156478" STYLE="fork" TEXT="90 documents of the 150 in the test set had at least one classification">
@@ -2669,8 +2659,7 @@
       review the training opinions and do the classification
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
 </node>
 </node>
